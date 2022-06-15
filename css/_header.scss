@@ -1,0 +1,24 @@
+.acc-header{
+  background-color: #ffffff;
+  background-color: red;
+  .logo-box{
+    width: 20%;
+  }
+  .nav-bar{
+    width: 60%; 
+   
+    .link{
+      color: #4A1A50;
+      .sub-list{
+        display: none;
+      }
+      &:hover{
+        .sub-list{
+          display: block;
+        }
+      }
+    }
+   
+  }
+
+}

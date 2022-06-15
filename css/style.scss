@@ -1,0 +1,82 @@
+@import "reusable";
+
+// my code
+.di-flex{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.main-wrapper{
+  @import "header";
+
+  .banner-area{
+    height: 100vh;
+    background-color: yellow;
+    .banner-carousel{
+      height: 100%;
+    }
+    .item{
+      align-items: center;
+      height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .rt-box{
+      width: 40%;
+    }
+    .lt-box{
+      width: 60%;
+    }
+    .rt-box, .lt-box{
+      position: relative;
+      top: 0;
+      left: 0;
+      .text{
+        position: absolute;
+        top: 50%;
+        right: -50px;
+        transform: translateY(-50%);
+        background-color: #ffffff;
+        font-family: Basel Grotesk;
+        font-size: 68px;
+        font-weight: 700;
+        line-height: 82px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #4A1A50;
+        z-index: 2;
+        // width: ;
+
+
+      }
+    }
+    .e-text{
+      margin: 0;
+
+    background: url(http://media.royalcaribbean.com/content/shared_assets/images/destinations/regions/hero/hawaii_01.jpg);
+
+
+    font-size: 24em;
+    font-family: impact;
+    left: 0;
+    // line-height: 100%;
+    // padding-top: 25px; /* padding + border of div */
+    // position: absolute; /* posi tion at top left of #containter to sync bg */
+    // text-align: center;
+    top: 0;
+    width: 100%;
+    // fill-opacity: ;
+    // text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -moz-background-clip: text;
+  }
+  
+  }
+}
+
+@import "media";
