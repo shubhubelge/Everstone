@@ -1,0 +1,285 @@
+.people-page{
+  // 
+  // background-color: red;
+  .pe-banner-section{
+    background-color: #ffffff;
+    background-image: url('./../assets/images/arrow-wing.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 900px;
+    height: 1044px;
+    padding-top: $space-top-menu;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-bottom: 200px;
+    &::after{
+      content: "";
+      width: calc(100% - 145px);
+      height: 145px;
+      background-color: #4A1A50;
+      display: block;
+      text-align: right;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    .container, .di-flex{
+      height: 100%;
+    }
+    .box-stru-grid{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .di-flex{
+      padding-top: 120px;
+      justify-content: space-between;
+      .lt, .rt{
+        width: 30%;
+      }
+      .lt{
+        align-self: flex-start;
+        .number{
+          font-family: 'Helvetica';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 204px;
+          line-height: 94px;
+          color: #4A1A50;
+          margin-bottom: 48px;
+        }
+        .subtitle{
+          font-family: 'Helvetica';
+          font-style: normal;
+          font-weight: 450;
+          font-size: 38px;
+          line-height: 40px;
+          color: #4A1A50;
+        }
+      }
+      .rt{
+        align-self: flex-end;
+        .title{
+          font-family: 'Helvetica';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 38px;
+          line-height: 46px;
+          color: #4A1A50;
+        }
+      }
+    }
+    .posi-absolute.bottom-right{
+      left: 0;
+      right: auto;
+    }
+  }
+  .main-people{
+    background-color: #4A1A50;
+    padding-bottom: 140px;
+    position: relative;
+    top: 0;
+    left: 0;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 143px;
+      height: 143px;
+      right: 0;
+      bottom: 0;
+      background: #046C7E;
+    }
+   
+  }
+
+  .di-flex{
+    justify-content: center;
+    align-items: flex-end;
+    gap: 100px;
+  }
+  .pe-title{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+  }
+  .people-item{
+    position: relative;
+    top: 0;
+    left: 0;
+    // width: 243px;
+    // max-width: calc(25% - 100px);
+    // margin-right: 100px;
+
+    &:nth-of-type(4), &:last-child{
+      margin: 0;
+    }
+   
+    
+    .user-img-box{
+      width: 100%;
+      height: 243px;
+      background: #5C3162;
+      position: relative;
+      left: 0;
+      bottom: 0;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: flex-end;
+      &::after {
+        content: " ";
+        height: 74px;
+        width: 74px;
+        border-left: 36px solid #ffffff;
+        border-top: 36px solid #ffffff;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      // img{
+      //   object-fit: cover;
+      // }
+    }
+    .name, .position{
+      font-family: 'Helvetica';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      color: #FFFFFF;
+      margin: 0;
+      margin-bottom: 8px;
+    }
+    .position{
+      font-weight: 400;
+
+    }
+    .location{
+      display: flex;
+      font-family: 'Helvetica';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color: #FFFFFF;
+      img{
+        display: inline-block;
+        width: 14px;
+        height: 16px;
+        margin: 0;
+        margin-right: 4px;
+      }
+    }
+  }
+  .bord-people{
+    padding: 140px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #046C7E;
+    .user-img-box{
+      background-color: #1E7B8B;
+    }
+  }
+  .mana-people{
+    padding: 250px 0 140px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 285px;
+      height: 143px;
+      left: 0;
+      top: 0;
+      background: #046C7E;
+    }
+    .pe-title{
+      color: #4A1A50;
+    }
+    .people-item{
+      .user-img-box{
+        background-color: #F0ECF1;
+        &::after{
+          border-color: #4A1A50;
+        }
+      }
+      .name, .position{
+        color: #4A1A50;
+      }
+    } 
+  }
+  .foresting{
+    padding: 100px 0 200px 0;
+    position: relative;
+    left: 0;
+    top: 0;
+    &::after{
+      content: " ";
+      height: 286px;
+      width: 286px;
+      border-bottom: 143px solid #4A1A50;
+      border-right: 143px solid #4A1A50;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    .fo-title{
+      font-family: 'Helvetica';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 58px;
+      line-height: 67px;
+      color: #4A1A50;
+    }
+    p{
+      font-family: 'Helvetica';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 58px;
+      line-height: 67px;
+      color: #4A1A50;
+      margin-bottom: 60px;
+    }
+    .text{
+      font-family: 'Helvetica';
+      font-style: normal;
+      font-weight: 450;
+      font-size: 34px;
+      line-height: 35px;
+      color: #4A1A50;
+    }
+    .login-btn{
+      background-color: #510b46;
+      width: 192px;
+      height: 40px;
+      margin-top: 24px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      text-align: center;
+      color: #fff;
+      display: inline-block;
+      padding: 12px 40px;
+      position: relative;
+      top: 0;
+      left: 0;
+      &::after {
+        content: "";
+        position: absolute;
+        right: -8px;
+        height: calc(100% - 8px);
+        width: 8px;
+        bottom: 0;
+        background-color: #510b46;
+      }
+    }
+  }
+}

@@ -1,0 +1,219 @@
+.footer{
+  padding: 80px 0 40px 0;
+  background-color: #510B46;
+  .content-18{
+    width: 18%;
+  }
+  .content-25{
+    width: 25%;
+  }
+  .content-17{
+    width: 17%;
+  }
+  .brand-container{
+    width: 33%;
+  }
+  .link-box{
+    margin-bottom: 32px;
+    .link-title{
+      font-family: 'Helvetica';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 37px;
+      color: #FFFFFF;
+      
+    }
+    ul{
+      list-style: none;
+    }
+    a{
+      font-family: 'Helvetica';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 37px;
+      color: #FFFFFF;
+    }
+  }
+  .more-c{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 15px;
+    line-height: 27px;
+    color: #FFFFFF;
+    display: inline-flex;
+    align-items: center;
+    img{
+      transform: rotate(-90deg);
+      width: 20px;
+    }
+  }
+  .logo{
+    img{
+      margin-left: 0;
+      margin-bottom: 24px;
+
+    }
+  }
+  .get-in-touch{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-top: 100px;
+    display: block;
+    margin-bottom: 12px;
+  }
+  .text{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  .link-main{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .lang-desing{
+    width: 201px;
+    height: 41px;
+    background: #510B46;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 0 24px;
+    position: relative;
+    left: 0;
+    top: 0;
+    &::after{
+      content: " ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      // background-color: transparent;
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: #ffffff;
+      border-left: 1px solid #ffffff;
+      
+    }
+  }
+  .dropbtn {
+    border: none;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    width: 201px;
+    height: 41px;
+    background: #510B46;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 0 48px;
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: left;
+    &::before{
+      content: " ";
+      position: absolute;
+      background-image: url("./../assets/images/down-arrow.png");
+      top: 40%;
+      right: 30px;
+      // transform: translateY(-50%);
+      width: 20px;
+      height: 10px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &::after{
+      content: " ";
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      // background-color: transparent;
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: #510B46;
+      border-left: 1px solid #ffffff;
+      border-bottom: 1px solid #ffffff;
+      // border-right: 1px solid #510B46;
+      // border-top: 1px solid #510B46;
+      
+    }
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 32px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    &::before{
+      transform: rotate(-180deg) ;
+      transform-origin: center;
+    }
+  }
+
+}
+.footer-info{
+  background-color: #532659;
+  padding: 32px 0;
+  .di-flex{
+    justify-content: space-between;
+  }
+  .copy-r{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 34px;
+    color: #ffffff;
+
+  }
+  .tandc{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 34px;
+    text-align: right;
+    color: #ffffff;
+
+  }
+}
