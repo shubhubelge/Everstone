@@ -1,0 +1,169 @@
+.approach-page{
+  .acc-header{
+    position: static;
+  }
+  .about-page{
+    .about-banner-area{
+      background-image: url("./../assets/images/approch-bg.jpg");
+      // padding-top: $space-top-menu *2;
+      background-position: right;
+    }
+  }
+  .control-growth{
+    
+    background-color: #ffffff;
+    background-image: url('./../assets/images/dolar-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    // max-height: 740px;
+    .control{
+      // padding: 20px;
+      // background: red;
+      .content-box{
+        width: calc(100% - $width-of-box*2);
+        background-color: $white;
+        padding: 160px 200px 200px 140px;
+        position: relative;
+        left: 0;
+        top: 0;
+        h2{
+          font-size: 36px;
+          color: #4a1a50;
+          font-weight: bold;
+          font-family: "Helvetica";
+          margin-bottom: 24px;
+          
+        }
+        p{
+          font-size: 30px;
+          line-height: 40px;
+          color: #4a1a50;
+          font-family: "Helvetica";
+        }
+        .white-text{
+          color: $white;
+        }
+        &::after{
+          content: "";
+          height: 280px;
+          width: 280px;
+          border-right: 140px solid #4a1a50;
+          border-bottom: 140px solid #4a1a50;
+          position: absolute;
+          right: 0px;
+          bottom: 0;
+        }
+      }
+      .bg-box{
+        width: $width-of-box;
+      }
+      .control-white-box{
+        width: $width-of-box;
+        background-color: $white;
+        // height: 100%;
+      }
+    }
+    .dollor{
+      .content-box{
+        width: 100%;
+        background: none;
+        &::after{
+          height: 280px;
+          width: 280px;
+          border-left: 140px solid $white;
+          border-bottom: 140px solid $white;
+          border-right: none;
+          border-top: none;
+
+          position: absolute;
+          right: 0px;
+          top: 0;
+        }
+      }
+    }
+  }
+  .buy-buld{
+    background-color: #ffffff;
+    background-image: url('./../assets/images/buy-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    border-left: 140px solid $purple;
+    padding: 180px 0 180px 140px;
+    h2{
+      font-size: 36px;
+      color: #000;
+      font-weight: bold;
+      font-family: "Helvetica";
+      margin-bottom: 24px;
+    }
+    p{
+      font-size: 30px;
+      color: #000;
+      font-family: "Helvetica";
+      margin-bottom: 32px;
+    }
+    .text{
+      font-size: 18px;
+      color: #000;
+      font-family: "Helvetica";
+    }
+  }
+  .build{
+    padding: 0;
+    .content{
+      background: $purple;
+      height: 100%;
+      padding: 160px 0;
+      h2, p, .text{
+        color: $white;
+      }
+    }
+  }
+  .liquidity{
+    .control-white-box{
+      width: $width-of-box;
+      background-color: $white;
+      border-top: 140px solid #4a1a50;
+      // height: 100%;
+    }
+    .content{
+      padding: 180px 100px;
+      background-color: $yellow;
+      width: calc(100% - $width-of-box);
+      position: relative;
+      left: 0;
+      top: 0;
+      &::after{
+        content: "";
+        height: 280px;
+        width: $width-of-box * 3;
+        border-right: 140px solid #4a1a50;
+        border-bottom: 140px solid #4a1a50;
+        position: absolute;
+        right: 0px;
+        bottom: 0;
+      }
+      h2{
+        font-size: 36px;
+        color: $purple;
+        font-weight: bold;
+        font-family: "Helvetica";
+        margin-bottom: 24px;
+      }
+      p{
+        font-size: 30px;
+        color: $purple;
+        font-family: "Helvetica";
+        margin-bottom: 32px;
+      }
+      .text{
+        font-size: 18px;
+        color: $purple;
+        font-family: "Helvetica";
+      }
+    }
+  }
+}
