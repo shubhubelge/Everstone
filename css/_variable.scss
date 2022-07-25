@@ -1,7 +1,11 @@
-$space-top-menu: 100px;
+$space-top-menu: 0;
 $width-of-box:140px;
 $purple: #4a1a50;
 $yellow:#aaff31;
 $white : #ffffff;
 
 // $width-of-border:140px;
+
+@media (max-width:799px) {
+  
+}

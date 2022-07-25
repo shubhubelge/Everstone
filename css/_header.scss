@@ -1,6 +1,6 @@
 .acc-header {
   // background-color: #ffffff;
-  position: absolute;
+  // position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -33,6 +33,7 @@
       font-size: 13px;
       line-height: 16px;
       // position: relative;
+      cursor: pointer;
       &::before {
         content: " ";
         height: 8px;

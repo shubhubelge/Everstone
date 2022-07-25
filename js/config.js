@@ -6,7 +6,8 @@ requirejs.config({
       "jquery.min"
     ],
     owl:"owl.carousel.min",
+    // owl:"owl.carousel.min",
 
-    // methods:"./methods"
+    methods:"./methods"
   }
 })

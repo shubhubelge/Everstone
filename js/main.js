@@ -3,9 +3,11 @@
 define([
   'jquery',
   'owl',
-  // 'methods'
-], function($) {
+  'methods'
+], function($, eve) {
   'use strict';
+  var $ = $;
+  // var methods = require("./methods.js");
   console.log("infule")
   if ($('#bannerCarousel').length) {
     let bannerCarousel = $("#bannerCarousel").owlCarousel({
@@ -154,15 +156,38 @@ define([
 
     })
   };
-  // awardsCarousel
-  // let gotoId = (id) =>{
-  //   console.log(id)
-  // };
+  $(".toggle_icon").click(function(){
+    $('.mobile-menu').toggleClass('open')
+  })
+  $('.mobile-menu').click((e)=>{
+    console.log("click")
+    if (!$(e.target).closest('.link-cotainer').length){
+      $(".mobile-menu").toggleClass('open')
+    }
+  });
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  };
 
+    // console.log(eve)
+    // const displayQuote = (id) => {
+    //   console.log("click");
+    //   methods.gotoId(id)
+    // }
+ 
 });
-// function gotoId(id){
-//   console.log(id)
-// }
+
+// console.log($)
 let gotoId = (id) =>{
   // console.log($("#"+id).length)
   if($("#"+id).length === 1)
@@ -183,20 +208,6 @@ function tabChange(tab){
   $('.tab-nav .'+tab).addClass('active');
   $('.content-section .tab-container').removeClass('active');
   $('.content-section #'+tab).addClass('active');
-}
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
 }
 
 
