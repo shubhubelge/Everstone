@@ -8,6 +8,6 @@ requirejs.config({
     owl:"owl.carousel.min",
     // owl:"owl.carousel.min",
 
-    methods:"./methods"
+    // methods:"./methods"
   }
 })

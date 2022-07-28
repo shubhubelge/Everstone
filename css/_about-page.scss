@@ -25,6 +25,9 @@
       font-family: "Helvetica";
     }
   }
+  .box-stru-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
   .white-boxs{
     margin-left: auto;
     width: $width-of-box*3;
@@ -938,7 +941,7 @@
       right: 0;
       visibility: hidden;
     }
-    &:hover{
+    &:hover, &.active-link{
       background-color: transparent;
       color: #ffffff;
       &::after{
@@ -1157,6 +1160,9 @@
 
     .city-img{
       display: block;
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
     }
     .address-box{
       width: 480px;

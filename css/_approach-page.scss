@@ -1,4 +1,5 @@
 .approach-page{
+  
   .acc-header{
     position: static;
   }
@@ -7,6 +8,13 @@
       background-image: url("./../assets/images/approch-bg.jpg");
       // padding-top: $space-top-menu *2;
       background-position: right;
+
+    }
+    .box-stru-grid{
+      grid-template-columns: repeat(2, 1fr);
+      &.white-boxs{
+        width: $width-of-box*2;
+      }
     }
   }
   .control-growth{
@@ -114,12 +122,14 @@
   .build{
     padding: 0;
     background: none;
+    border: none;
     img{
       object-fit: cover;
       height: 100%;
       width: 100%;
     }
     .content{
+      border-left: 140px solid $purple;
       background: $purple;
       height: 100%;
       padding: 160px 0;
@@ -131,8 +141,8 @@
   .liquidity{
     .control-white-box{
       width: $width-of-box;
-      background-color: $white;
-      border-top: 140px solid #4a1a50;
+      background-color: #4a1a50;
+      // border-top: 140px solid #4a1a50;
       // height: 100%;
     }
     .content{

@@ -186,7 +186,7 @@
         </div>
 
       </section>
-      <div class="about-page-nav">
+      <div class="about-page-nav" >
         <div class="container">
           <nav class="sub-navbar ">
             <a href="#!" class="link" onclick="event.preventDefault(); gotoIdNav('singapore')">Singapore</a>
@@ -218,7 +218,12 @@
       <section class="location-section" id="mumbai">
         <div class="container">
           <div class="content-box">
-            <img class="city-img" src="./assets/images/mumbai.jpg" alt="">
+            <!-- <img class="city-img" src="./assets/images/mumbai.jpg" alt=""> -->
+            <picture>
+              <source class="city-img" media="(min-width:992px)" srcset="./assets/images/mumbai.jpg">
+              <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
+              <img class="city-img" src="./assets/images/mumbai-small.jpg" alt="Flowers">
+            </picture>
             <div class="address-box">
               <h2>Mumbai</h2>
               <p>Everstone Capital Advisors Pvt. Ltd.</p>
