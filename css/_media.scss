@@ -168,7 +168,7 @@
       display: none;
     }
   }
-  .main-wrapper .our-section .bootom-section .item.visiblity-hiden, .main-wrapper .our-section .bootom-section .item.white-bg {
+  .main-wrapper .our-section .bootom-section .item.visiblity-hiden, .main-wrapper .our-section .bootom-section .item.white-bg, .main-wrapper .our-section .bootom-section .item.hide-null {
     display: none;
   }
   .main-wrapper .our-section .bootom-section {
@@ -424,14 +424,22 @@
   }
   .approach-page .buy-buld {
     border-left: 60px solid #4a1a50;
-    padding: 90px 0 90px 20px;
+    padding: 90px 90px 90px 20px;
+    background-image: url('./../assets/images/buy-bg-small.jpg');
   }
   .approach-page .buy-buld h2 {
     font-size: 24px;
   }
   .approach-page .buy-buld p {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 24px;
+    br{
+      display: none;
+    }
+  }
+  .approach-page .buy-buld .text{
+    font-size: 14px;
+    line-height: normal;
   }
   .approach-page .build{
     padding: 0;
@@ -443,7 +451,7 @@
   .approach-page .build .content {
     border-left: 60px solid #4a1a50;
     height: auto;
-    padding: 60px 24px;
+    padding: 80px 80px 80px 24px;
   }
   .approach-page .liquidity .content{
     padding: 48px 120px 90px 24px;
@@ -455,7 +463,7 @@
   }
   .approach-page .liquidity .content::after {
     $width-of-box: 70px;
-    height: $width-of-box*2;
+    height: 110px;
     width: $width-of-box * 3;
     border-right: $width-of-box solid #4a1a50;
     border-bottom: $width-of-box solid #4a1a50;
@@ -538,7 +546,9 @@
       font-size: 13px;
       line-height: normal;
       margin-bottom: 8px;
-  
+      br{
+        display: none;
+      }
     }
   } 
   // .main-wrapper .about-page-nav .link{
@@ -671,7 +681,7 @@
   }
   .main-wrapper .media-indiv .news-item p{
     font-size: 14px;
-    line-height: normal;
+    line-height: 28px;
   }
   .main-wrapper .media-indiv .other-news h2{
     font-size: 22px;
@@ -682,8 +692,139 @@
     margin-bottom: 16px;
   }
   .main-wrapper .media-indiv .other-news .other-news-link .link-title{
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 24px;
+  }
+  .approach-page .liquidity .control-white-box{
+    background-color: $white;
+  }
+  // .approach-page .global-section .tingle{
+  //   $width-of-box:60px;
+  //   width: $width-of-box;
+  //   height: $width-of-box;
+  // }
+  .approach-page .global-section{
+
+    $width-of-box:60px;
+    padding: 60px 24px 140px 24px;
+  
+    .tingle{
+      width: $width-of-box;
+      height: $width-of-box;
+      &.left-top{
+        &::after{
+          width: $width-of-box;
+          height: $width-of-box;
+          top: $width-of-box;
+          border: $width-of-box/2 solid transparent;
+          border-top-color: #dbd1dc;
+          border-left-color: #dbd1dc;
+        }
+      }
+      &.right-bottom{
+        &::after{
+          width: $width-of-box;
+          height: $width-of-box;
+          bottom: $width-of-box;
+          border: $width-of-box/2 solid transparent;
+          border-bottom-color: #dbd1dc;
+          border-right-color: #dbd1dc;
+        }
+      }
+      
+    }
+    h2{
+      font-size: 22px;
+      margin-bottom: 24px;
+    }
+  }
+  .main-wrapper .about-page .about-banner-area {
+    background-position: right;
+  }
+  .main-wrapper .media-page .media-carousel .item .image-box, .main-wrapper .media-page .media-carousel .item .text-section{
+    width: 100%;
+  }
+  .main-wrapper .people-page .pe-banner-section .box-stru-grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 140px;
+    margin-right: 45px;
+  }
+  .main-wrapper .people-page .pe-banner-section .box-stru-grid .box{
+    width: 70px;
+    height: 70px;
+  }
+  .main-wrapper .people-page .pe-banner-section::after {
+    width: 100%;
+    height: 70px;
+    border-right: 70px solid $white;
+  }
+  .main-wrapper .people-page .pe-banner-section{
+    padding-bottom: 70px;
+    height: auto;
+    background-image: url('./../assets/images/arrow-wing-mobile.jpg');
+    .lt{
+      padding: 60px 0 90px 0;
+    }
+  }
+  .main-wrapper .people-page .di-flex {
+    justify-content: space-around;
+  }
+  .main-wrapper .people-page .people-item{
+    width: calc(50% - 20px);
+    margin-right: 0;
+    text-align: center;
+  }
+  // .main-wrapper .people-page .people-item:nth-of-type(2n) {
+  //   margin-right: 0;
+  // }
+  .main-wrapper .people-page .pe-banner-section .scroll-bottm {
+    bottom: 70px;
+  }
+  .main-wrapper .people-page .button-center{
+    text-align: center;
+    margin-top: 31px;
+  }
+  .main-wrapper .people-page .main-people::after, .main-wrapper .people-page .bord-people::after, .main-wrapper .people-page .mana-people::after{
+    width: 70px;
+    height: 70px;
+  }
+  .main-wrapper .people-page .pe-banner-section .di-flex .lt .number{
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+  .main-wrapper .people-page .pe-banner-section .di-flex .lt .number span{
+    display: block;
+    font-size: 20px;
+    margin-top: 8px;
+  }
+  .main-wrapper .people-page .pe-banner-section .di-flex .lt .subtitle{
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .main-wrapper .people-page .pe-title{
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .main-wrapper .people-page .main-people{
+    padding-bottom: 60px;
+  }
+  .main-wrapper .people-page .bord-people, .main-wrapper .people-page .mana-people{
+    padding: 40px 0 70px 0;
+  }
+  .main-wrapper .people-page .people-item .name{
+    font-size: 16px;
+  }
+  .main-wrapper .people-page .people-item .position{
+    font-size: 14px;
+    br{
+      display: none;
+    }
+  }
+  .main-wrapper .people-page .people-item .location {
+    font-size: 14px;
+    justify-content: center;
   }
   // .approach-page .control-growth .control . .content-box
 }
@@ -728,5 +869,10 @@
   .main-wrapper .media-page .media-grid{
     display: block;
   }
-
+  .approach-page .global-section h2 {
+    margin-left: 24px;
+  }
+  .main-wrapper .people-page .people-item{
+    width: 100%;
+  }
 }

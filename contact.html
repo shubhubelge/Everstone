@@ -30,16 +30,16 @@
           <a href="#!" class="mobile-menu-btn toggle_icon">
             <img src="./assets/images/menu.png" alt="">
           </a>
-          <a href="/index.html" class="logo-box">
+          <a href="http://mockup.org.uk/Everstone/index.html" class="logo-box">
             <img src="./assets/images/logo.png" alt="">
           </a>
           <!-- <nav> -->
             <ul class="nav-bar">
               <li class="nav-item">
-                <a class="link">About Us</a>
+                <a href="about-us.html" class="link">About Us</a>
                 <ul class="sub-list">
                   <li>
-                  <a href="#!">About us</a>
+                  <a href="about-us.html">About us</a>
                   </li>
                   <li>
                     <a href="#!">Mission, Vision & Values</a>
@@ -53,7 +53,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="link">Approach</a>
+                <a class="link" href="approach.html">Approach</a>
                 <ul class="sub-list">
                   <li>
                   <a href="#!">What we do</a>
@@ -90,7 +90,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="link">Team</a>
+                <a class="link" href="teams.html">Team</a>
                 <ul class="sub-list">
                   <li>
                   <a href="#!">ESG</a>
@@ -102,7 +102,7 @@
                 </ul>
               </li>
                <li class="nav-item">
-                <a class="link">Contact Us</a>
+                <a class="link" href="contact.html">Contact Us</a>
               </li>
             </ul>
           <!-- </nav> -->
@@ -188,14 +188,14 @@
       </section>
       <div class="about-page-nav" >
         <div class="container">
-          <nav class="sub-navbar ">
-            <a href="#!" class="link" onclick="event.preventDefault(); gotoIdNav('singapore')">Singapore</a>
-            <a href="#!" class="link" onclick="event.preventDefault(); gotoIdNav('mumbai')">Mumbai</a>
-            <a href="#!" class="link" onclick="event.preventDefault(); gotoIdNav('bengaluru')">Bengaluru</a>
-            <a href="#!" class="link" onclick="event.preventDefault(); gotoIdNav('delhi')">Delhi</a>
-            <a href="#!" class="link" onclick="event.preventDefault(); gotoIdNav('mauritius')">Mauritius</a>
-            <a href="#!" class="link" onclick="event.preventDefault(); gotoIdNav('newYork')">New York</a>
-            <a href="#!" class="link" onclick="event.preventDefault(); gotoIdNav('dubai')">Dubai</a>
+          <nav class="sub-navbar" id="top-menu">
+            <a href="#singapore" class="link" onclick="event.preventDefault(); gotoIdNav('singapore')">Singapore</a>
+            <a href="#mumbai" class="link" onclick="event.preventDefault(); gotoIdNav('mumbai')">Mumbai</a>
+            <a href="#bengaluru" class="link" onclick="event.preventDefault(); gotoIdNav('bengaluru')">Bengaluru</a>
+            <a href="#delhi" class="link" onclick="event.preventDefault(); gotoIdNav('delhi')">Delhi</a>
+            <a href="#mauritius" class="link" onclick="event.preventDefault(); gotoIdNav('mauritius')">Mauritius</a>
+            <a href="#newYork" class="link" onclick="event.preventDefault(); gotoIdNav('newYork')">New York</a>
+            <a href="#dubai" class="link" onclick="event.preventDefault(); gotoIdNav('dubai')">Dubai</a>
           </nav>
         </div>
       </div>
@@ -257,7 +257,11 @@
       <section class="location-section" id="delhi">
         <div class="container">
           <div class="content-box">
-            <img class="city-img" src="./assets/images/delhi.jpg" alt="">
+            <!-- <img class="city-img" src="./assets/images/delhi.jpg" alt=""> -->
+            <picture>
+              <source class="city-img" media="(min-width:992px)" srcset="./assets/images/delhi.jpg">
+              <img class="city-img" src="./assets/images/delhi-small.jpg" alt="Flowers">
+            </picture>
             <div class="address-box">
               <h2>Delhi</h2>
               <p>Everstone Capital Advisors <br>
@@ -442,11 +446,11 @@
       <a class="close-link toggle_icon">
         <img src="./assets/images/cros.svg" alt="">
       </a>
-      <a href="#!" class="link">About Us</a>
-      <a href="#!" class="link">Approach</a>
+      <a href="./about-us.html" class="link">About Us</a>
+      <a href="./approach.html" class="link">Approach</a>
       <a href="#!" class="link">Responsible Investing</a>
-      <a href="#!" class="link">Team</a>
-      <a href="#!" class="link">Contact Us</a>
+      <a href="./teams.html" class="link">Team</a>
+      <a href="./contact.html" class="link">Contact Us</a>
       <!-- <a href="#!" class="link"></a> -->
       <div class="box-struc-grid">
           <div class="box "></div>

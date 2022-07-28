@@ -30,16 +30,16 @@
           <a href="#!" class="mobile-menu-btn toggle_icon">
             <img src="./assets/images/menu.png" alt="">
           </a>
-          <a href="/index.html" class="logo-box">
+          <a href="http://mockup.org.uk/Everstone/index.html" class="logo-box">
             <img src="./assets/images/logo.png" alt="">
           </a>
           <!-- <nav> -->
             <ul class="nav-bar">
               <li class="nav-item">
-                <a class="link">About Us</a>
+                <a href="about-us.html" class="link">About Us</a>
                 <ul class="sub-list">
                   <li>
-                  <a href="#!">About us</a>
+                  <a href="about-us.html">About us</a>
                   </li>
                   <li>
                     <a href="#!">Mission, Vision & Values</a>
@@ -53,7 +53,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="link">Approach</a>
+                <a class="link" href="approach.html">Approach</a>
                 <ul class="sub-list">
                   <li>
                   <a href="#!">What we do</a>
@@ -90,7 +90,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="link">Team</a>
+                <a class="link" href="teams.html">Team</a>
                 <ul class="sub-list">
                   <li>
                   <a href="#!">ESG</a>
@@ -102,7 +102,7 @@
                 </ul>
               </li>
                <li class="nav-item">
-                <a class="link">Contact Us</a>
+                <a class="link" href="contact.html">Contact Us</a>
               </li>
             </ul>
           <!-- </nav> -->
@@ -148,7 +148,7 @@
       <div class="about-page-nav">
 
         <div class="container">
-          <a href="#!" class="scroll-bottm" onclick="event.preventDefault(); gotoId('oursection')">
+          <a href="#!" class="scroll-bottm" onclick="event.preventDefault(); gotoId('controlGrowth')">
             <svg width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_756_766)">
               <path d="M0.795585 3.2682L3.78125 0.0109253L21.8585 19.7327L18.8728 22.99L0.795585 3.2682Z" />
@@ -156,12 +156,12 @@
               </g>
             </svg>
           </a>
-          <nav class="sub-navbar ">
-            <a href="#!" class="link" onclick="event.preventDefault(); gotoIdNav('controlGrowth')">Control + Growth</a>
-            <a href="#!" class="link" onclick="event.preventDefault(); gotoIdNav('dollarLong')">Dollar-long</a>
-            <a href="#!" class="link" onclick="event.preventDefault(); gotoIdNav('buyBuild')">Buy + Build</a>
-            <a href="#!" class="link" onclick="event.preventDefault(); gotoIdNav('buildOperate')">Build + Operate</a>
-            <a href="#!" class="link" onclick="event.preventDefault(); gotoIdNav('liquidityFocused')">Liquidity-focused</a>
+          <nav class="sub-navbar " id="top-menu">
+            <a href="#controlGrowth" class="link" onclick="event.preventDefault(); gotoIdNav('controlGrowth')">Control + Growth</a>
+            <a href="#dollarLong" class="link" onclick="event.preventDefault(); gotoIdNav('dollarLong')">Dollar-long</a>
+            <a href="#buyBuild" class="link" onclick="event.preventDefault(); gotoIdNav('buyBuild')">Buy + Build</a>
+            <a href="#buildOperate" class="link" onclick="event.preventDefault(); gotoIdNav('buildOperate')">Build + Operate</a>
+            <a href="#liquidityFocused" class="link" onclick="event.preventDefault(); gotoIdNav('liquidityFocused')">Liquidity-focused</a>
           </nav>
         </div>
       </div>
@@ -170,13 +170,13 @@
           <div class="di-flex">
             <div class="content-box">
               <h2>Control + Growth</h2>
-              <p>India and SE Asia’s most active <br> mid-market, control-oriented growth <br> investing firm 95%+ control positions</p>
+              <p>India and SE Asia's most active <br> mid-market, control-oriented growth <br> investing firm 95%+ control positions</p>
             </div>
             <div class="bg-box"></div>
             <div class="control-white-box"></div>
           </div>
         </div>
-        <div id="controlGrowth" class="control dollor">
+        <div id="dollarLong" class="control dollor">
           <div class="di-flex">
             <div class="content-box">
               <h2 class="white-text">Dollar-long</h2>
@@ -187,7 +187,7 @@
           </div>
         </div>
       </section>
-      <section class="buy-buld">
+      <section class="buy-buld" id="buyBuild">
         <div class="content">
           <h2>
             Buy + Build
@@ -198,7 +198,7 @@
           
         </div>
       </section>
-      <section class="buy-buld build">
+      <section class="buy-buld build" id="buildOperate">
         <div class="di-flex">
           <div class="col-50">
             <div class="content">
@@ -215,7 +215,7 @@
           </div>
         </div>
       </section>
-      <section class="liquidity">
+      <section class="liquidity" id="liquidityFocused">
         <div class="di-flex">
           <div class="control-white-box"></div>
           <div class="content">
@@ -225,13 +225,21 @@
           </div>
         </div>
       </section>
-      <section class="global">
-        <picture>
-          <source class="city-img" media="(min-width:992px)" srcset="./assets/images/app-bg.png">
-          <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
-          <img class="city-img" src="./assets/images/approach_mobile.png" alt="Flowers">
-          <!-- <img class="city-img" src="./assets/images/approach_mobile.png" alt="Flowers"> -->
-        </picture>
+      <section class="global-section">
+        <div class="tingle left-top"></div>
+        <div class="tingle right-bottom"></div>
+        <div class="container">
+          <h2>Global Alignments</h2>
+          <div class="globe-img">
+            <img  src="./assets/images/evre-app.png" alt="">
+            <!-- <picture>
+              <source class="city-img" media="(min-width:992px)" srcset="./assets/images/app-bg.png">
+              <img class="city-img" src="./assets/images/approach_mobile.png" alt="Flowers">
+            </picture> -->
+          </div>
+
+        </div>
+        
       </section>
     </div>
     
@@ -351,11 +359,11 @@
       <a class="close-link toggle_icon">
         <img src="./assets/images/cros.svg" alt="">
       </a>
-      <a href="#!" class="link">About Us</a>
-      <a href="#!" class="link">Approach</a>
+      <a href="./about-us.html" class="link">About Us</a>
+      <a href="./approach.html" class="link">Approach</a>
       <a href="#!" class="link">Responsible Investing</a>
-      <a href="#!" class="link">Team</a>
-      <a href="#!" class="link">Contact Us</a>
+      <a href="./teams.html" class="link">Team</a>
+      <a href="./contact.html" class="link">Contact Us</a>
       <!-- <a href="#!" class="link"></a> -->
       <div class="box-struc-grid">
           <div class="box "></div>

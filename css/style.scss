@@ -79,10 +79,7 @@ body{
     .banner-carousel, .owl-stage-outer, .owl-stage, .owl-item{
       height: 100%;
     }
-    .e-box-containe{
-      background-image: url('./../assets/images/JGU.gif');
-
-    }
+    
     .owl-theme .owl-dots{
       text-align: right;
       position: absolute;
@@ -114,10 +111,8 @@ body{
       border-style: solid;
       border-color: red;
       background-color: #ffffff;
-      background-image: url('./../assets/images/JGU.gif');
       background-repeat: no-repeat;
       background-size: cover;
-      // border-image: url('./../assets/images/JGU.gif') 30 round;
       &::before {
         content: "";
         position: absolute;
@@ -527,8 +522,11 @@ body{
         visibility: hidden;
       }
       &:hover{
-        // font-weight: 500;
+        &::after{
         visibility: visible;
+
+        }
+        // font-weight: 500;
       }
     } 
   }
@@ -711,9 +709,7 @@ body{
   width: 300px;
   min-height: 100%;
   height: 500px;
-  // max-height:  530px;
-  background-color: yellow;
-  background-image: url(./../assets/images/JGU.gif);
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;

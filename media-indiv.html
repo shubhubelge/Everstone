@@ -28,16 +28,16 @@
           <a href="#!" class="mobile-menu-btn toggle_icon">
             <img src="./assets/images/menu.png" alt="">
           </a>
-          <a href="/index.html" class="logo-box">
+          <a href="http://mockup.org.uk/Everstone/index.html" class="logo-box">
             <img src="./assets/images/logo.png" alt="">
           </a>
           <!-- <nav> -->
             <ul class="nav-bar">
               <li class="nav-item">
-                <a class="link">About Us</a>
+                <a href="about-us.html" class="link">About Us</a>
                 <ul class="sub-list">
                   <li>
-                  <a href="#!">About us</a>
+                  <a href="about-us.html">About us</a>
                   </li>
                   <li>
                     <a href="#!">Mission, Vision & Values</a>
@@ -51,7 +51,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="link">Approach</a>
+                <a class="link" href="approach.html">Approach</a>
                 <ul class="sub-list">
                   <li>
                   <a href="#!">What we do</a>
@@ -100,7 +100,7 @@
                 </ul>
               </li>
                <li class="nav-item">
-                <a class="link">Contact Us</a>
+                <a class="link" href="contact.html">Contact Us</a>
               </li>
             </ul>
           <!-- </nav> -->
@@ -294,11 +294,11 @@
       <a class="close-link toggle_icon">
         <img src="./assets/images/cros.svg" alt="">
       </a>
-      <a href="#!" class="link">About Us</a>
-      <a href="#!" class="link">Approach</a>
+      <a href="./about-us.html" class="link">About Us</a>
+      <a href="./approach.html" class="link">Approach</a>
       <a href="#!" class="link">Responsible Investing</a>
-      <a href="#!" class="link">Team</a>
-      <a href="#!" class="link">Contact Us</a>
+      <a href="./teams.html" class="link">Team</a>
+      <a href="./contact.html" class="link">Contact Us</a>
       <!-- <a href="#!" class="link"></a> -->
       <div class="box-struc-grid">
           <div class="box "></div>
@@ -329,28 +329,6 @@
     require(["config"], function(){
       // alert("after")
       require(["./js/main.js"])
-    })
-  </script>
-  <script>
-    $(".toggle_icon").click(function(){
-      $('.mobile-menu').toggleClass('open')
-    })
-    $('.mobile-menu').click((e)=>{
-      console.log("click")
-      if (!$(e.target).closest('.link-cotainer').length){
-        $(".mobile-menu").toggleClass('open')
-      }
-    })
-    $(document).ready(function(){
-      $(".media-grid .item").slice(0, 4).show();
-      $("#loadMore").on("click", function(e){
-        e.preventDefault();
-        $(".media-grid .item:hidden").slice(0, 4).slideDown();
-        if($(".media-grid .item:hidden").length == 0) {
-          $("#loadMore").text("No Content").addClass("noContent");
-        }
-      });
-      
     })
   </script>
 </body>
