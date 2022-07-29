@@ -698,10 +698,30 @@ body{
 
     }
   }
+  .position-fix-btn{
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: 68px;
+    bottom: 68px;
+    z-index: 99;
+    display: none;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    svg{
+      transform: rotate(-180deg);
+      transform-origin: center;
+    }
+    &.btn-show{
+      display: flex;
+    }
+  }
   @import "about-us";
   @import "people";
   @import "about-page";
   @import "media-page";
+  @import "rsg-page";
 }
 @import "approach-page";
 

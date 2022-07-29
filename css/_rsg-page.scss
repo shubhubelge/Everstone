@@ -1,0 +1,115 @@
+.rsg-page{
+  // background-color: red;
+  .about-banner-area {
+    background-image: url('./../assets/images/rsg-bg.jpg');
+    position: relative;
+  }
+  .white-boxs .fill {
+    background-color: $purple;
+  }
+  .scroll-bottm {
+    bottom: 0;
+    top: auto;
+  }
+  .misson-section{
+    padding: 100px 0 0 0;
+    background-color: #4a1a50;
+    .container{
+      position: relative;
+      left: 0;
+      top: 0;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 140px;
+        width: 140px;
+        background-color: $yellow;
+      }
+    }
+    .di-flex{
+      padding-bottom: 180px;
+    }
+    .img-section{
+      width: 180px;
+    }
+    .text-section{
+      width: calc(100% - 180px);
+      padding-left: 75px;
+      p{
+        font-size: 18px;
+        line-height: 28px;
+        color: #ffffff;
+        font-family: "Helvetica";
+        margin-bottom: 24px;
+      }
+      .text-second{
+        font-size: 14px;
+        line-height: 24px;
+        color: #ffffff;
+        font-family: "Helvetica";
+      }
+    }
+  }
+  .our-commit{
+    padding: 60px 0 140px 0;
+    background-color: $yellow;
+    position: relative;
+    left: 0;
+    top: 0;
+    .text-container{
+      padding-right: 140px;
+    }
+    .box-stru-grid{
+      grid-template-columns: repeat(2, 1fr);
+      width: $width-of-box * 2;
+      height: $width-of-box * 2;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      .fill{
+        background-color: $white;
+      }
+    }
+    h2{
+      font-size: 36px;
+      line-height: 46px;
+      color: #4a1a50;
+      font-weight: bold;
+      font-family: "Helvetica";
+      margin-bottom: 24px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 28px;
+      color: #4a1a50;
+      font-family: "Helvetica";
+      margin-bottom: 32px;
+
+    }
+    .list{
+      list-style: none;
+      padding-right: 24px;
+      li {
+        padding-left: 16px;
+        position: relative;
+        margin-bottom: 24px;
+        font-size: 14px;
+        color: #4a1a50;
+        font-family: "Helvetica";
+        &::before {
+          content: " ";
+          height: 8px;
+          width: 8px;
+          top: 4px;
+          margin-top: 0;
+          background-color: #4a1a50;
+          display: inline-block;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+}

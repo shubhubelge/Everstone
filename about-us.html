@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <main class="main-wrapper">
+  <main class="main-wrapper" id="mainTop">
     <header class="acc-header">
       <div class="container">
         <div class="di-flex">
@@ -34,79 +34,34 @@
           <a href="http://mockup.org.uk/Everstone/index.html" class="logo-box">
             <img src="./assets/images/logo.png" alt="">
           </a>
-          <!-- <nav> -->
-            <ul class="nav-bar">
+          <ul class="nav-bar">
+            <li class="nav-item">
+              <a href="about-us.html" class="link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="approach.html">Approach</a>
+            </li>
+            <li class="nav-item">
+              <a class="link">Responsible Investing</a>
+              <ul class="sub-list">
+                <li>
+                  <a href="#!">Our Commitment</a>
+                </li>
+                <li>
+                  <a href="#!">Sustainability Resources & Reports</a>
+                </li>
+                <li>
+                  <a href="#!">Everstone Foundation</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="teams.html">Team</a>
+            </li>
               <li class="nav-item">
-                <a href="about-us.html" class="link">About Us</a>
-                <ul class="sub-list">
-                  <li>
-                  <a href="#!">About us</a>
-                  </li>
-                  <li>
-                    <a href="#!">Mission, Vision & Values</a>
-                  </li>
-                  <li>
-                    <a href="#!">Personality</a>
-                  </li>
-                  <li>
-                    <a href="#!">Manifesto</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="link" href="approach.html">Approach</a>
-                <ul class="sub-list">
-                  <li>
-                  <a href="#!">What we do</a>
-                  </li>
-                  <li>
-                    <a href="#!">Climate Change</a>
-                  </li>
-                  <li>
-                    <a href="#!">Digital & Logistics</a>
-                  </li>
-                  <li>
-                    <a href="#!">Credit</a>
-                  </li>
-                  <li>
-                    <a href="#!">Ventures</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="link">Responsible Investing</a>
-                <ul class="sub-list">
-                  <li>
-                  <a href="#!">Leadership</a>
-                  </li>
-                  <li>
-                    <a href="#!">Founders</a>
-                  </li>
-                  <li>
-                    <a href="#!">Board Members</a>
-                  </li>
-                  <li>
-                    <a href="#!">Key management team</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="link" href="teams.html">Team</a>
-                <ul class="sub-list">
-                  <li>
-                  <a href="#!">ESG</a>
-                  </li>
-                  <li>
-                    <a href="#!">Everstone Foundation
-                    </a>
-                  </li>
-                </ul>
-              </li>
-               <li class="nav-item">
-                <a class="link" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
-          <!-- </nav> -->
+              <a class="link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
             <div class="login-search">
               <a href="#!" class="search-icon">
                 <img src="./assets/images/search.svg" alt="">
@@ -147,7 +102,7 @@
       <div class="about-page-nav">
 
         <div class="container">
-          <a href="#!" class="scroll-bottm" onclick="event.preventDefault(); gotoId('oursection')">
+          <a href="#!" class="scroll-bottm" onclick="event.preventDefault(); gotoId('vmv')">
             <svg width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_756_766)">
               <path d="M0.795585 3.2682L3.78125 0.0109253L21.8585 19.7327L18.8728 22.99L0.795585 3.2682Z" />
@@ -177,12 +132,12 @@
                 <div class="text-box">
                   <h2 class="vi-title">Vision</h2>
                   <p>To transform India and Southeast Asia through
-                    our leadership & impact.</p>
+                    our leadership and impact.</p>
                 </div>
                 <div class="text-box">
                   <h2 class="vi-title">Mission</h2>
                   <p>To build great businesses that set new standards
-                    & move society forward.</p>
+                    and move society forward.</p>
                 </div>
               </div>
               <div class="align-self-end">
@@ -212,10 +167,14 @@
       <section class="values-section" > -->
           <div class="di-flex">
             <div class="col-50 cor-content">
+              <div class="text-box">
+              <h2>Values</h2>
+
+              </div>
+
               <div id="valuesCarousel" class="owl-carousel owl-theme values-carousel">
                 <div class="item">
                   <div>
-                    <h2>Values</h2>
                     <p>We have courage in our convictions</p>
                     <div class="text">We have the foresight to see what could be and seize
                       opportunities with both hands.</div>
@@ -224,7 +183,6 @@
                 </div>
                 <div class="item">
                   <div>
-                    <h2>Values</h2>
                     <p>We lead by example</p>
                     <div class="text">We're incredibly proud of our impact, but we never let our achievements go to our heads.</div>
                   </div>
@@ -232,7 +190,6 @@
                 </div>
                 <div class="item">
                   <div>
-                    <h2>Values</h2>
                     <p>We see things through</p>
                     <div class="text">We aren’t fazed by a little adversity and work tirelessly to turn vision into reality.</div>
                   </div>
@@ -367,16 +324,40 @@
 
               </div>
               <div class="tab-container" id="healthcarePharmaceuticals">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione mollitia deserunt exercitationem incidunt minima natus voluptates eaque omnis praesentium dignissimos optio itaque sint, iure magnam. Voluptas at eum eaque vel.
+                <h2 class="con-title"><span>$1.2 </span> Billion Invested.</h2>
+                <p>Parma & Nutra API. Hospitals. Digital Healthcare. Medical Devices. CDMO.</p>
+                <div id="sectorsCarousel" class="owl-carousel owl-theme sectors-carousel">
+                  <div class="item">
+
+                  </div>
+                </div>
               </div>
               <div class="tab-container" id="consumer">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione mollitia deserunt exercitationem incidunt minima natus voluptates eaque omnis praesentium dignissimos optio itaque sint, iure magnam. Voluptas at eum eaque vel.
+                <h2 class="con-title"><span>$ </span> Invested.</h2>
+                <p>Consumer staples. QSR. Wellness. </p>
+                <div id="sectorsCarousel" class="owl-carousel owl-theme sectors-carousel">
+                  <div class="item">
+
+                  </div>
+                </div>
               </div>
               <div class="tab-container" id="financialServices">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione mollitia deserunt exercitationem incidunt minima natus voluptates eaque omnis praesentium dignissimos optio itaque sint, iure magnam. Voluptas at eum eaque vel.
+                <h2 class="con-title"><span>$ </span>Invested.</h2>
+                <p>CV financing. Home finance. Insurance.</p>
+                <div id="sectorsCarousel" class="owl-carousel owl-theme sectors-carousel">
+                  <div class="item">
+
+                  </div>
+                </div>
               </div>
               <div class="tab-container" id="industrials">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione mollitia deserunt exercitationem incidunt minima natus voluptates eaque omnis praesentium dignissimos optio itaque sint, iure magnam. Voluptas at eum eaque vel.
+                <h2 class="con-title"><span>$ </span> Invested.</h2>
+                <p>Spec Chem. Manufacturing. Outsourcing.</p>
+                <div id="sectorsCarousel" class="owl-carousel owl-theme sectors-carousel">
+                  <div class="item">
+
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -433,7 +414,8 @@
                         <img src="./assets/images/burgr-king.png" alt="">
                       </div>
                       <div class="text-box">
-                        Everstone is the Master Franchisee for BK in India and Indonesia since 2013 with around 500 tores. Successfully completed a landmark IPO for BK India on December 14, 2020, and the company had a market cap of US$ 715 million as of April 15, 2022
+                        Everstone is the Master Franchisee for BK in Indonesia since 2013 with around 500 stores.
+Successfully completed a landmark IPO for BK India on December 14, 2020, and the company had a market cap of US$715 million as of April 15, 2022
                       </div>
                     </div>
                     <div class="di-flex item">
@@ -441,7 +423,7 @@
                         <img src="./assets/images/domi.png" alt="">
                       </div>
                       <div class="text-box">
-                        Everstone is the Master Franchisee for Domino's in Indonesia since 2013 with over 145 stores
+                        Everstone is the Master Franchisee for Domino’s in Indonesia since 2013 with over 145 stores
                       </div>
                     </div>
                   </div>
@@ -456,20 +438,20 @@
                     
                     <div class="di-flex item">
                       <div class="img-box">
-                        <img src="./assets/images/burgr-king.png" alt="">
+                        <img src="./assets/images/indostar.jpg" alt="">
                       </div>
                       <div class="text-box">
-                        Everstone is the Master Franchisee for BK in India and Indonesia since 2013 with around 500 tores. Successfully completed a landmark IPO for BK India on December 14, 2020, and the company had a market cap of US$ 715 million as of April 15, 2022
+                        Creation of one of the leading non-bank finance companies in India, In partnership with Goldman Sachs and Ashmore. Inducted Brookfield as co-promotor to further scale the asset
                       </div>
                     </div>
-                    <div class="di-flex item">
+                    <!-- <div class="di-flex item">
                       <div class="img-box">
                         <img src="./assets/images/domi.png" alt="">
                       </div>
                       <div class="text-box">
                         Everstone is the Master Franchisee for Domino's in Indonesia since 2013 with over 145 stores
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                   <p></p>
                 </div>
@@ -482,18 +464,42 @@
                     
                     <div class="di-flex item">
                       <div class="img-box">
-                        <img src="./assets/images/burgr-king.png" alt="">
+                        <img src="./assets/images/CPP.jpg" alt="">
                       </div>
                       <div class="text-box">
-                        Everstone is the Master Franchisee for BK in India and Indonesia since 2013 with around 500 tores. Successfully completed a landmark IPO for BK India on December 14, 2020, and the company had a market cap of US$ 715 million as of April 15, 2022
+                        One of the world’s largest pension plans managing over US$ 478 billion
                       </div>
                     </div>
                     <div class="di-flex item">
                       <div class="img-box">
-                        <img src="./assets/images/domi.png" alt="">
+                        <img src="./assets/images/brookfield.jpg" alt="">
                       </div>
                       <div class="text-box">
-                        Everstone is the Master Franchisee for Domino's in Indonesia since 2013 with over 145 stores
+                        Leading global manager with over US$ 600billion in assets under management
+                      </div>
+                    </div>
+                    <div class="di-flex item">
+                      <div class="img-box">
+                        <img src="./assets/images/goldmansachs.jpg" alt="">
+                      </div>
+                      <div class="text-box">
+                        One of the largest managers of private capital globally, managing over US$ 38 billion
+                      </div>
+                    </div>
+                    <div class="di-flex item">
+                      <div class="img-box">
+                        <img src="./assets/images/GLP.jpg" alt="">
+                      </div>
+                      <div class="text-box">
+                        Leading global developer of modern logistics facilities, with over US$ 60 billion in assets under management, spanning approx. 720 million sqft.
+                      </div>
+                    </div>
+                    <div class="di-flex item">
+                      <div class="img-box">
+                        <img src="./assets/images/BP.jpg" alt="">
+                      </div>
+                      <div class="text-box">
+                        A leading global oil and gas company with a strong focus on green energy resources
                       </div>
                     </div>
                   </div>
@@ -508,18 +514,42 @@
                     
                     <div class="di-flex item">
                       <div class="img-box">
-                        <img src="./assets/images/burgr-king.png" alt="">
+                        <img src="./assets/images/PRI.jpg" alt="">
                       </div>
                       <div class="text-box">
-                        Everstone is the Master Franchisee for BK in India and Indonesia since 2013 with around 500 tores. Successfully completed a landmark IPO for BK India on December 14, 2020, and the company had a market cap of US$ 715 million as of April 15, 2022
+                        Signatory of the United Nations supported Principles for Responsible Investment (UN PRI)
                       </div>
                     </div>
                     <div class="di-flex item">
                       <div class="img-box">
-                        <img src="./assets/images/domi.png" alt="">
+                        <img src="./assets/images/IFC.jpg" alt="">
                       </div>
                       <div class="text-box">
-                        Everstone is the Master Franchisee for Domino's in Indonesia since 2013 with over 145 stores
+                        A World Bank Group member and ESG standard setter that operates globally catalyzing private-sector development in emerging markets.
+                      </div>
+                    </div>
+                    <div class="di-flex item">
+                      <div class="img-box">
+                        <img src="./assets/images/MAS.jpg" alt="">
+                      </div>
+                      <div class="text-box">
+                        Regulated by the Monetary Authority of Singapore.
+                      </div>
+                    </div>
+                    <div class="di-flex item">
+                      <div class="img-box">
+                        <img src="./assets/images/ukaid.jpg" alt="">
+                      </div>
+                      <div class="text-box">
+                        UK Foreign, Commonwealth and Development Office
+                      </div>
+                    </div>
+                    <div class="di-flex item">
+                      <div class="img-box">
+                        <img src="./assets/images/niif.jpg" alt="">
+                      </div>
+                      <div class="text-box">
+                        National Investment & Infrastructure Fund (India).
                       </div>
                     </div>
                   </div>
@@ -539,9 +569,9 @@
               <div class="popup">
                 <div class="pop-map-ti">Everstone Capital LLC</div>
                 <p>
-                  540 Madison Avenue
-                  17th floor
-                  New York 10022</p>
+                  540 Madison Avenue,<br>
+                17th Floor,<br>
+                New York 10022</p>
                 <a class="close-btn">-</a>
                 <!-- <a href="#!" class="map-link"><img data-src="assets/images/map-link.svg" class="location lozad" alt=""> <span>Google Maps</span> </a> -->
               </div>
@@ -549,11 +579,12 @@
             <div class="dot dubai" tabindex="0">
               <span class="city-name right">Dubai</span>
               <div class="popup">
-                <div class="pop-map-ti">Everstone Capital LLC</div>
+                <div class="pop-map-ti">ESG Service FZE</div>
                 <p>
-                  540 Madison Avenue
-                  17th floor
-                  New York 10022</p>
+                  WeWork One Central, <br>
+                The Office 4, <br>
+                Dubai World Trade Centre, <br>
+                Dubai</p>
                 <a class="close-btn">-</a>
                 <!-- <a href="#!" class="map-link"><img data-src="assets/images/map-link.svg" class="location lozad" alt=""> <span>Google Maps</span> </a> -->
               </div>
@@ -561,11 +592,10 @@
             <div class="dot delhi" tabindex="0">
               <span class="city-name left">Delhi</span>
               <div class="popup">
-                <div class="pop-map-ti">Everstone Capital LLC</div>
+                <div class="pop-map-ti">Everstone Capital Advisors Private Limited</div>
                 <p>
-                  540 Madison Avenue
-                  17th floor
-                  New York 10022</p>
+                  C-5, First Floor Defence Colony, <br>
+                New Dehli, 110024</p>
                 <a class="close-btn">-</a>
                 <!-- <a href="#!" class="map-link"><img data-src="assets/images/map-link.svg" class="location lozad" alt=""> <span>Google Maps</span> </a> -->
               </div>
@@ -573,11 +603,11 @@
             <div class="dot mumbai" tabindex="0">
               <span class="city-name left">Mumbai</span>
               <div class="popup">
-                <div class="pop-map-ti">Everstone Capital LLC</div>
+                <div class="pop-map-ti">Everstone Capital Advisors Pvt. Ltd.</div>
                 <p>
-                  540 Madison Avenue
-                  17th floor
-                  New York 10022</p>
+                  One World Center, 16th Floor, Tower 2A, <br>
+                Senapati Bapat Marg, Elphinstone Road, <br>
+                Mumbai, 400013 </p>
                 <a class="close-btn">-</a>
                 <!-- <a href="#!" class="map-link"><img data-src="assets/images/map-link.svg" class="location lozad" alt=""> <span>Google Maps</span> </a> -->
               </div>
@@ -585,11 +615,11 @@
             <div class="dot bengaluru" tabindex="0">
               <span class="city-name left">Bengaluru</span>
               <div class="popup">
-                <div class="pop-map-ti">Everstone Capital LLC</div>
+                <div class="pop-map-ti">Everstone Capital Advisors Pvt. Ltd.</div>
                 <p>
-                  540 Madison Avenue
-                  17th floor
-                  New York 10022</p>
+                  First Floor, No. 5, <br>
+                13th Main Road, Vasanth Nagar,<br>
+                Bengaluru, 560052</p>
                 <a class="close-btn">-</a>
                 <!-- <a href="#!" class="map-link"><img data-src="assets/images/map-link.svg" class="location lozad" alt=""> <span>Google Maps</span> </a> -->
               </div>
@@ -597,11 +627,11 @@
             <div class="dot singapore" tabindex="0">
               <span class="city-name left">Singapore</span>
               <div class="popup">
-                <div class="pop-map-ti">Everstone Capital LLC</div>
+                <div class="pop-map-ti">Everstone Capital Asia Pte. Ltd.</div>
                 <p>
-                  540 Madison Avenue
-                  17th floor
-                  New York 10022</p>
+                  163 Penang Road, <br>
+                Winsland House II, #08-01, <br>
+                Singapore 238463</p>
                 <a class="close-btn">-</a>
                 <!-- <a href="#!" class="map-link"><img data-src="assets/images/map-link.svg" class="location lozad" alt=""> <span>Google Maps</span> </a> -->
               </div>
@@ -609,11 +639,11 @@
             <div class="dot mauritius" tabindex="0">
               <span class="city-name left">Mauritius</span>
               <div class="popup">
-                <div class="pop-map-ti">Everstone Capital LLC</div>
+                <div class="pop-map-ti">Everstone Capital Limited</div>
                 <p>
-                  540 Madison Avenue
-                  17th floor
-                  New York 10022</p>
+                  3rd Floor, Standard Chartered Tower,<br>
+                Bank Street, 19 Cybercity,<br>
+                Ebene 72209, Mauritius </p>
                 <a class="close-btn">-</a>
                 <!-- <a href="#!" class="map-link"><img data-src="assets/images/map-link.svg" class="location lozad" alt=""> <span>Google Maps</span> </a> -->
               </div>
@@ -719,7 +749,7 @@
             <a href="#!" class="get-in-touch">Other links</a>
             <a href="#!" class="link-main">Portfolio</a>
             <a href="#!" class="link-main">Foundation</a>
-            <a href="#!" class="link-main">Media</a>
+            <a href="./media.html" class="link-main">Media</a>
           </div>
           <!-- <div class="content-11">
             <div class="link-box">
@@ -749,23 +779,31 @@
       <div class="container">
         <div class="di-flex">
           <div class="copy-r">
-            © Copyright 2017 Everstone Capital.
+            © Copyright 2022 Everstone Capital.
           </div>
           <a href="#!" class="tandc">Terms & Conditions</a>
         </div>
       </div>
     </div>
+    <a href="#!" class="scroll-bottm position-fix-btn" onclick="event.preventDefault(); gotoId('mainTop')">
+      <svg width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_756_766)">
+        <path d="M0.795585 3.2682L3.78125 0.0109253L21.8585 19.7327L18.8728 22.99L0.795585 3.2682Z" />
+        <path d="M21.8641 19.7339L39.9448 0.00836182L42.9305 3.26565L24.8498 22.9912L21.8641 19.7339Z" >
+        </g>
+      </svg>
+    </a>
   </main>
   <div class="mobile-menu">
     <div class="link-cotainer">
       <a class="close-link toggle_icon">
         <img src="./assets/images/cros.svg" alt="">
       </a>
-      <a href="./about-us.html" class="link">About Us</a>
-      <a href="./approach.html" class="link">Approach</a>
+      <a href="#!" class="link">About Us</a>
+      <a href="#!" class="link">Approach</a>
       <a href="#!" class="link">Responsible Investing</a>
-      <a href="./teams.html" class="link">Team</a>
-      <a href="./contact.html" class="link">Contact Us</a>
+      <a href="#!" class="link">Team</a>
+      <a href="#!" class="link">Contact Us</a>
       <!-- <a href="#!" class="link"></a> -->
       <div class="box-struc-grid">
           <div class="box "></div>
@@ -791,20 +829,9 @@
   </div>
   <script data-main="js/config" src="assets/vendors/js/require.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script>
-    // alert("bef");
-    require(["config"], function(){
-      // alert("after")
-      require(["./js/main.js"])
-    })
+  <script src="./assets/vendors/js/owl.carousel.min.js"></script>
 
-  </script>
-  <script>
-    // $(document).ready(function(){
-    //   $('#partAccFirst').click();
-
-    // })
-  </script>
+ <script src="./js/main.js"></script>
 
 </body>
 

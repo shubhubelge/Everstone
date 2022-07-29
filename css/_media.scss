@@ -671,7 +671,7 @@
     margin-bottom: 16px;
   }
   .main-wrapper .media-indiv .news-item .item-title{
-    font-size: 22px;
+    font-size: 20px;
     line-height: normal;
     margin-bottom: 16px;
     display: block;
@@ -716,7 +716,7 @@
           width: $width-of-box;
           height: $width-of-box;
           top: $width-of-box;
-          border: $width-of-box/2 solid transparent;
+          border: 30px solid transparent;
           border-top-color: #dbd1dc;
           border-left-color: #dbd1dc;
         }
@@ -726,7 +726,7 @@
           width: $width-of-box;
           height: $width-of-box;
           bottom: $width-of-box;
-          border: $width-of-box/2 solid transparent;
+          border: 30px solid transparent;
           border-bottom-color: #dbd1dc;
           border-right-color: #dbd1dc;
         }
@@ -762,6 +762,7 @@
     padding-bottom: 70px;
     height: auto;
     background-image: url('./../assets/images/arrow-wing-mobile.jpg');
+    // background-image: url('./../');
     .lt{
       padding: 60px 0 90px 0;
     }
@@ -826,6 +827,31 @@
     font-size: 14px;
     justify-content: center;
   }
+  .main-wrapper .media-page .media-grid .news-item.diffrent .text-box .wrapper-box{
+    height: calc(100% - 40px);
+  }
+  .main-wrapper .about-page .awards-section .owl-section .awards-carousel .item .i-title{
+    margin-bottom: 0;
+  }
+  .main-wrapper .scroll-bottm.position-fix-btn {
+    top: auto;
+    left: auto;
+    right: 48px;
+    bottom: 48px;
+  }
+  .main-wrapper .about-page .values-section .cor-content .text-box{
+    height: 30%;
+  }
+  .main-wrapper .about-page .values-section .cor-content .values-carousel{
+    height: 70%;
+  }
+  .main-wrapper .about-page .values-section .cor-content .values-carousel .owl-nav button.owl-prev, .main-wrapper .about-page .values-section .cor-content .values-carousel .owl-nav button.owl-next{
+    height: 25px;
+    width: 25px;
+  }
+  .main-wrapper .about-page .values-section .cor-content .values-carousel .owl-nav button.owl-next {
+    left: 36px;
+  }
   // .approach-page .control-growth .control . .content-box
 }
 
@@ -874,5 +900,10 @@
   }
   .main-wrapper .people-page .people-item{
     width: 100%;
+  }
+  .main-wrapper .media-page .media-grid .news-item.diffrent .text-box p{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }

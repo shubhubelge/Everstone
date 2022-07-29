@@ -1,11 +1,11 @@
 
 
-define([
-  'jquery',
-  'owl',
-  // 'methods'
-], function($) {
-  'use strict';
+// define([
+//   'jquery',
+//   'owl',
+//   // 'methods'
+// ], function($) {
+//   'use strict';
   // var $ = $;
   // var methods = require("./methods.js");
   // console.log("infule")
@@ -117,6 +117,7 @@ define([
         992:{
           items:3,
           dots: false,
+      mouseDrag:false,
 
           // nav:true
         },
@@ -195,6 +196,9 @@ define([
   var i;
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
+      $('.acc-container .accordion').removeClass('active');
+      $('.acc-container .panel').css("max-height", "")
+      // panel.style.maxHeight = null;
       this.classList.toggle("active");
       var panel = this.nextElementSibling;
       if (panel.style.maxHeight) {
@@ -211,7 +215,7 @@ define([
     //   methods.gotoId(id)
     // }
  
-});
+// });
 
 // console.log($)
 let gotoId = (id) =>{
@@ -345,8 +349,24 @@ function submitData(e, formName){
 }
 
 let toggleform = (value) =>{
-  console.log("text => ", value)
   $(".cont-links-box").toggleClass("active")
   $(".form-container").toggleClass("active")
+  $("#bookAptOne .col-input").removeClass("act");
+  $(".col-input."+value).addClass("act");
 }
 // $('#thankYou').popup('show');
+
+$(document).ready(function(){
+  let scrollAmt = 800;
+  // if($(window).width()<992){
+  //   scrollAmt = 1400;
+  // }
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > scrollAmt) {
+      $('.position-fix-btn').addClass('btn-show');
+    } else {
+      $('.position-fix-btn').removeClass('btn-show');
+
+    }
+  });
+});

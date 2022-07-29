@@ -17,6 +17,10 @@
   <link rel="stylesheet preconnect" href="assets/vendors/css/owl.carousel.min.css">
   <link rel="stylesheet preconnect" href="assets/vendors/css/owl.theme.default.min.css">
   <link rel="stylesheet preconnect" href="css/style.css">
+  <style>
+    .col-input.partnership, .col-input.media, .col-input.careers{display: none;}
+    .col-input.partnership.act, .col-input.media.act, .col-input.careers.act{display: block;}
+  </style>
   <title>
     Everstone
   </title>
@@ -33,79 +37,34 @@
           <a href="http://mockup.org.uk/Everstone/index.html" class="logo-box">
             <img src="./assets/images/logo.png" alt="">
           </a>
-          <!-- <nav> -->
-            <ul class="nav-bar">
+          <ul class="nav-bar">
+            <li class="nav-item">
+              <a href="about-us.html" class="link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="approach.html">Approach</a>
+            </li>
+            <li class="nav-item">
+              <a class="link">Responsible Investing</a>
+              <ul class="sub-list">
+                <li>
+                  <a href="#!">Our Commitment</a>
+                </li>
+                <li>
+                  <a href="#!">Sustainability Resources & Reports</a>
+                </li>
+                <li>
+                  <a href="#!">Everstone Foundation</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="teams.html">Team</a>
+            </li>
               <li class="nav-item">
-                <a href="about-us.html" class="link">About Us</a>
-                <ul class="sub-list">
-                  <li>
-                  <a href="about-us.html">About us</a>
-                  </li>
-                  <li>
-                    <a href="#!">Mission, Vision & Values</a>
-                  </li>
-                  <li>
-                    <a href="#!">Personality</a>
-                  </li>
-                  <li>
-                    <a href="#!">Manifesto</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="link" href="approach.html">Approach</a>
-                <ul class="sub-list">
-                  <li>
-                  <a href="#!">What we do</a>
-                  </li>
-                  <li>
-                    <a href="#!">Climate Change</a>
-                  </li>
-                  <li>
-                    <a href="#!">Digital & Logistics</a>
-                  </li>
-                  <li>
-                    <a href="#!">Credit</a>
-                  </li>
-                  <li>
-                    <a href="#!">Ventures</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="link">Responsible Investing</a>
-                <ul class="sub-list">
-                  <li>
-                  <a href="#!">Leadership</a>
-                  </li>
-                  <li>
-                    <a href="#!">Founders</a>
-                  </li>
-                  <li>
-                    <a href="#!">Board Members</a>
-                  </li>
-                  <li>
-                    <a href="#!">Key management team</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="link" href="teams.html">Team</a>
-                <ul class="sub-list">
-                  <li>
-                  <a href="#!">ESG</a>
-                  </li>
-                  <li>
-                    <a href="#!">Everstone Foundation
-                    </a>
-                  </li>
-                </ul>
-              </li>
-               <li class="nav-item">
-                <a class="link" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
-          <!-- </nav> -->
+              <a class="link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
             <div class="login-search">
               <a href="#!" class="search-icon">
                 <img src="./assets/images/search.svg" alt="">
@@ -132,11 +91,11 @@
                   <div class="link-title">Partnership</div>
                   <p>Become a strategic partner</p>
                 </a>
-                <a href="#!" class="cont-link" onclick="toggleform('partnership')">
+                <a href="#!" class="cont-link" onclick="toggleform('media')">
                   <div class="link-title">Media</div>
                   <p>Speak to our media team </p>
                 </a>
-                <a href="#!" class="cont-link" onclick="toggleform('partnership')">
+                <a href="#!" class="cont-link" onclick="toggleform('careers')">
                   <div class="link-title">Careers</div>
                   <p>Explore careers opportunities</p>
                 </a>
@@ -160,7 +119,8 @@
                       <input type="email" class="form-control" name="email" placeholder="Email Address" required>
                     </div>
                   </div>
-                  <div class="col-input">
+                  <!-- partner -->
+                  <div class="col-input partnership">
                     <div class="control">
                       <select class="form-control" name="fname" required>
                         <option class="placeholder" value="">Select Topic</option>
@@ -168,9 +128,30 @@
                         <option value="mercedes">Real estate </option>
                         <option value="audi">others</option>
                       </select>
-
                     </div>
                   </div>
+                  <!-- media -->
+                  <div class="col-input media">
+                    <div class="control">
+                      <select class="form-control" name="fname" required>
+                        <option class="placeholder" value="">Select Topic</option>
+                        <option value="saab">Media Enquiries</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Career -->
+                  <div class="col-input careers">
+                    <div class="control">
+                      <select class="form-control" name="fname" required>
+                        <option class="placeholder" value="">Select Topic</option>
+                        <option value="Part Time">Part Time</option>
+                        <option value="Full Time">Full Time</option>
+                        <option value="Internship">Internship</option>
+                        <option value="Others">Others</option>
+                      </select>
+                    </div>
+                  </div>
+
                   <div class="col-input">
                     <div class="control">
                       <textarea class="form-control" name="message" rows="4" placeholder="Message" required></textarea>
@@ -206,8 +187,8 @@
             <div class="address-box">
               <h2>Singapore</h2>
               <p>Everstone Capital Asia Pte. Ltd.</p>
-              <address class="text">163 Penang Road <br>
-                Winsland House II, #08-01 <br>
+              <address class="text">163 Penang Road, <br>
+                Winsland House II, #08-01, <br>
                 Singapore 238463
                 </address>
               <a class="mobile" href="tel:+6565116888">+65 6511 6888</a>
@@ -227,8 +208,8 @@
             <div class="address-box">
               <h2>Mumbai</h2>
               <p>Everstone Capital Advisors Pvt. Ltd.</p>
-              <address class="text">One World Center, 16th Floor, Tower 2A <br>
-                Senapati Bapat Marg, Elphinstone Road <br>
+              <address class="text">One World Center, 16th Floor, Tower 2A, <br>
+                Senapati Bapat Marg, Elphinstone Road, <br>
                 Mumbai, 400013 
                 
                 
@@ -245,8 +226,8 @@
             <div class="address-box">
               <h2>Bengaluru</h2>
               <p>Everstone Capital Advisors Pvt. Ltd.</p>
-              <address class="text">First Floor, No. 5
-                13th Main Road, Vasanth Nagar
+              <address class="text">First Floor, No. 5, <br>
+                13th Main Road, Vasanth Nagar,<br>
                 Bengaluru, 560052
               </address>
               <a class="mobile" href="tel:+918040474000">+91 80 4047 4000</a>
@@ -267,7 +248,7 @@
               <p>Everstone Capital Advisors <br>
                 Private Limited
                 </p>
-              <address class="text">C-5, First Floor Defence Colony <br>
+              <address class="text">C-5, First Floor Defence Colony, <br>
                 New Dehli, 110024
               </address>
               <a class="mobile" href="tel:+911143096000">+91 11 4309 6000</a>
@@ -282,8 +263,8 @@
             <div class="address-box">
               <h2>Mauritius</h2>
               <p>Everstone Capital Limited</p>
-              <address class="text">3rd Floor, Standard Chartered Tower
-                Bank Street, 19 Cybercity
+              <address class="text">3rd Floor, Standard Chartered Tower,<br>
+                Bank Street, 19 Cybercity,<br>
                 Ebene 72209, Mauritius 
               </address>
               <a class="mobile" href="tel:+2304677986">+230 467 7986</a>
@@ -298,9 +279,9 @@
             <img class="city-img" src="./assets/images/new-york.jpg" alt="">
             <div class="address-box">
               <h2>New York</h2>
-              <p>Everstone Capital LLCC</p>
-              <address class="text">540 Madison Avenue
-                17th Floor
+              <p>Everstone Capital LLC</p>
+              <address class="text">540 Madison Avenue,<br>
+                17th Floor,<br>
                 New York 10022
                 
                 
@@ -318,9 +299,9 @@
             <div class="address-box">
               <h2>Dubai</h2>
               <p>ESG Service FZE</p>
-              <address class="text">WeWork One Central
-                The Office 4
-                Dubai World Trade Centre
+              <address class="text">WeWork One Central, <br>
+                The Office 4, <br>
+                Dubai World Trade Centre, <br>
                 Dubai</address>
               <a class="mobile" href="tel:+2304677986"> +230 467 7986</a>
             </div>
@@ -404,7 +385,7 @@
             <a href="#!" class="get-in-touch">Other links</a>
             <a href="#!" class="link-main">Portfolio</a>
             <a href="#!" class="link-main">Foundation</a>
-            <a href="#!" class="link-main">Media</a>
+            <a href="./media.html" class="link-main">Media</a>
           </div>
           <!-- <div class="content-11">
             <div class="link-box">
@@ -434,7 +415,7 @@
       <div class="container">
         <div class="di-flex">
           <div class="copy-r">
-            © Copyright 2017 Everstone Capital.
+            © Copyright 2022 Everstone Capital.
           </div>
           <a href="#!" class="tandc">Terms & Conditions</a>
         </div>
@@ -476,20 +457,8 @@
   </div>
   <script data-main="js/config" src="assets/vendors/js/require.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script>
-    // alert("bef");
-    require(["config"], function(){
-      // alert("after")
-      require(["./js/main.js"])
-    })
-
-  </script>
-  <script>
-    // $(document).ready(function(){
-    //   $('#partAccFirst').click();
-
-    // })
-  </script>
+  <script src="./assets/vendors/js/owl.carousel.min.js"></script>
+ <script src="./js/main.js"></script>
 
 </body>
 
