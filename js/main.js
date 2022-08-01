@@ -139,14 +139,9 @@
       responsive:{
         0:{
             items:1.5,
-           
-            // nav:true
         },
         992:{
           items:3.5,
-          // dots: false,
-
-          // nav:true
         },
       }
     })
@@ -189,11 +184,18 @@
       // items: 1,
       dots: false,
       nav:false,
-      items:5,
+      
       autoplayTimeout: 5000,
       loop:true,
       smartSpeed: 2000,
-
+      responsive:{
+        0:{
+            items:2,
+        },
+        992:{
+          items:5,
+        },
+      }
     })
   };
   
@@ -203,11 +205,18 @@
       // items: 1,
       dots: false,
       nav:false,
-      items:5,
+      // items:5,
       autoplayTimeout: 5000,
       loop:true,
       smartSpeed: 2000,
-
+      responsive:{
+        0:{
+            items:2,
+        },
+        992:{
+          items:5,
+        },
+      }
     })
   };
   $(".toggle_icon").click(function(){

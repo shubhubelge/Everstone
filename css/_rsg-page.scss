@@ -177,6 +177,7 @@
       margin-bottom: 24px;
     }
     .rsg-carousel{
+      padding: 0 98px;
       .item{
         margin-bottom: 48px;
         .image-bg{
@@ -211,6 +212,7 @@
     }
     .brand-link-carousel{
       margin-bottom: 48px;
+      padding: 0 98px;
       .item{
         margin-bottom: 24px;
         padding: 2px;
@@ -318,5 +320,67 @@
         margin-left: 8px;
       }
     }
+  }
+  .about-page-nav{
+    h2{
+      font-size: 36px;
+      color: #ffffff;
+      font-family: "Helvetica";
+      padding: 36px;
+    }
+  }
+  .policy-section{
+    padding: 80px 0;
+    .info-box{
+      margin-bottom: 40px;
+    }
+    h2{
+      font-size: 24px;
+      line-height: 46px;
+      color: #4a1a50;
+      font-weight: bold;
+      font-family: "Helvetica";
+      margin-bottom: 24px;
+    }
+    .list-box li{
+      color: $purple;
+      &::before {
+        background-color: $purple;
+      }
+    }
+  }
+  .btnDownload{
+    background-color: #fff;
+    border: 2px solid #4a1a50;
+    font-size: 18px;
+    line-height: 30px;
+    color: #4a1a50;
+    font-weight: bold;
+    font-family: "Helvetica";
+    width: 96%;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 80px;
+    margin-bottom: 24px;
+    // padding-rig/ht: 24px;
+    &::after {
+      content: " ";
+      position: absolute;
+      display: block;
+      width: 8px;
+      height: 8px;
+      top: -2px;
+      right: -2px;
+      background-color: #fff;
+      border-left: 2px solid #4a1a50;
+      border-bottom: 2px solid #4a1a50;
+    }
+  }
+  .text-box{
+    font-size: 18px;
+    line-height: 28px;
+    color: #4a1a50;
+    font-family: "Helvetica";
   }
 }

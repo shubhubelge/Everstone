@@ -853,6 +853,109 @@
     left: 36px;
   }
   // .approach-page .control-growth .control . .content-box
+
+  // .main-wrapper .about-page .about-banner-area h1
+  .main-wrapper .rsg-page .misson-section .text-section{
+    width: 100%;
+    padding: 0;
+  }
+  .main-wrapper .rsg-page .misson-section .img-section{
+    margin: 0 auto;
+    width: 280px;
+    margin-bottom: 40px;
+    img{
+      object-fit: cover;
+      height: 320px;
+      width: 100%;
+    }
+  }
+  .main-wrapper .rsg-page .misson-section{
+    padding-top: 40px;
+  }
+  .main-wrapper .rsg-page .misson-section .text-section p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: $poppins;
+  }
+  .main-wrapper .rsg-page .misson-section .text-section .text-second{
+    font-size: 14px;
+    line-height: 24px;
+    color: #4a1a50;
+    font-weight: 400;
+    font-family: $poppins;
+  }
+  .main-wrapper .rsg-page .our-commit .white-left{
+    width: 60px;
+    border-top: 70px solid #aaff31;
+  }
+  .main-wrapper .rsg-page .our-commit .text-container{
+    width: calc(100% - 60px);
+    padding: 40px 40px 70px 40px;
+  }
+  .main-wrapper .rsg-page .our-commit h2{
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 18px;
+  }
+  .main-wrapper .rsg-page .our-commit p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .main-wrapper .rsg-page .list-box li{
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: $poppins;
+  }
+  .main-wrapper .rsg-page .our-commit::after{
+    width: 70px;
+    height: 70px;
+  }
+  .main-wrapper .rsg-page .our-approch{
+    padding: 40px 0 20px 0;
+    border-left: 60px solid #4a1a50;
+  }
+  .main-wrapper .rsg-page .our-approch .content{
+    padding: 0 20px;
+  }
+  .main-wrapper .rsg-page .our-approch h2{
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 16px;
+  }
+  .main-wrapper .rsg-page .our-approch .rsg-carousel, .main-wrapper .rsg-page .our-approch .brand-link-carousel{
+    padding: 0 0 0 40px;
+  }
+  .main-wrapper .rsg-page .our-approch::after{
+    height: 60px;
+    width: 60px;
+    left: -60px;
+  }
+  .main-wrapper .rsg-page .framework .white-left{
+    width: 60px;
+  }
+  .main-wrapper .rsg-page .framework .content{
+    width: calc(100% - 60px);
+    padding: 60px 120px 100px 40px;
+  }
+  .main-wrapper .rsg-page .framework::after{
+    height: 120px;
+    width: 180px;
+    border-width: 60px;
+  }
+  .main-wrapper .rsg-page .framework h2{
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+  .main-wrapper .rsg-page .framework a{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: $poppins;
+  }
 }
 
 @media (max-width: 767.98px) {
