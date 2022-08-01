@@ -1,0 +1,26 @@
+.di-flex{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.mobile-menu-btn, .mobile-menu{
+  display: none;
+}
+.col-50{
+  width: 50%;
+}
+.align-self-center{
+  align-self: center;
+}
+.align-self-end{
+  align-self: flex-end;
+  
+}
+.justify-self-end{
+  justify-self: end;
+}
+@media (max-width: 991.98px) {
+  // .col-50{
+  //   width: 100%;
+  // }
+}

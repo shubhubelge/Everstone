@@ -7,11 +7,47 @@
   url('./../assets/font/Helvetica.woff') format("woff"),
   url('./../assets/font/Helvetica.otf')  format("opentype");
 }
+@font-face {
+  font-family: 'Basel-Grotesk-Book';
+  src:url('./../assets/font/Basel-Grotesk-Book.woff') format('woff'),
+  url('./../assets/font/Basel-Grotesk-Book.woff2') format('woff2'),
+  url('./../assets/font/Basel-Grotesk-Book.svg#Basel-Grotesk-Book') format('svg'),
+  url('./../assets/font/Basel-Grotesk-Book.eot'),
+  url('./../assets/font/Basel-Grotesk-Book.eot?#iefix') format('embedded-opentype'),
+  url('./../assets/font/Basel-Grotesk-Book.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Basel-Grotesk-Bold';
+  src:url('./../assets/font/Basel-Grotesk-Bold.woff') format('woff'),
+  url('./../assets/font/Basel-Grotesk-Bold.woff2') format('woff2'),
+  url('./../assets/font/Basel-Grotesk-Bold.svg#Basel-Grotesk-Bold') format('svg'),
+  url('./../assets/font/Basel-Grotesk-Bold.eot'),
+  url('./../assets/font/Basel-Grotesk-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./../assets/font/Basel-Grotesk-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Basel-Grotesk-Medium';
+  src:url('./../assets/font/Basel-Grotesk-Medium.woff') format('woff'),
+  url('./../assets/font/Basel-Grotesk-Medium.woff2') format('woff2'),
+  url('./../assets/font/Basel-Grotesk-Medium.svg#Basel-Grotesk-Medium') format('svg'),
+  url('./../assets/font/Basel-Grotesk-Medium.eot'),
+  url('./../assets/font/Basel-Grotesk-Medium.eot?#iefix') format('embedded-opentype'),
+  url('./../assets/font/Basel-Grotesk-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Basel-Grotesk-Regular';
+  src:url('./../assets/font/Basel-Grotesk-Regular.woff') format('woff'),
+    url('./../assets/font/Basel-Grotesk-Regular.woff2') format('woff2'),
+    url('./../assets/font/Basel-Grotesk-Regular.svg#Basel-Grotesk-Regular') format('svg'),
+    url('./../assets/font/Basel-Grotesk-Regular.eot'),
+    url('./../assets/font/Basel-Grotesk-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./../assets/font/Basel-Grotesk-Regular.ttf') format('truetype');
+}
 @import "variable";
 @import "reusable";
 
 body{
-  font-family: 'Helvetica';
+  font-family: 'Basel-Grotesk-Book';
   touch-action: manipulation;
 }
 // my code
@@ -21,7 +57,7 @@ body{
   display: inline-flex;
   align-items: center;
   margin-right: 18px;
-  font-family: 'Helvetica';
+  font-family: 'Basel-Grotesk-Book';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -147,9 +183,9 @@ body{
         right: -80px;
         transform: translateY(-50%);
         background-color: #ffffff;
-        font-family: 'Helvetica';
+        font-family: 'Basel-Grotesk-Bold';
         font-size: 68px;
-        font-weight: 700;
+        // font-weight: 700;
         // line-height: 105px;
         letter-spacing: 0em;
         text-align: left;
@@ -262,8 +298,8 @@ body{
         .title{
           font-size: 16px;
           color: #ffffff;
-          font-weight: bold;
-          font-family: "Helvetica";
+          // font-weight: bold;
+          font-family: "Basel-Grotesk-Bold";
         }
         .info-box{
           position: absolute;
@@ -294,15 +330,15 @@ body{
             right: auto;
           }
           .info-title{
-            font-family: 'Helvetica';
+            font-family: 'Basel-Grotesk-Bold';
             font-size: 16px;
-            font-weight: bold;
+            // font-weight: bold;
             // line-height: 0px;
             color: #4A1A50;
             margin-bottom: 16px;
           }
           p{
-            font-family: 'Helvetica';
+            font-family: 'Basel-Grotesk-Book';
             font-size: 14px;
             line-height: 22px;
             color: #4A1A50;
@@ -310,7 +346,7 @@ body{
 
           }
           .link{
-            font-family: 'Helvetica';
+            font-family: 'Basel-Grotesk-Book';
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
@@ -391,7 +427,7 @@ body{
       }
       
       .item-title{
-        font-family: 'Helvetica';
+        font-family: 'Basel-Grotesk-Medium';
         font-style: normal;
         font-weight: 500;
         font-size: 30px;
@@ -409,7 +445,7 @@ body{
         // }
       }
       .date{
-        font-family: 'Helvetica';
+        font-family: 'Basel-Grotesk-Book';
         font-style: normal;
         font-weight: 500;
         font-size: 22px;
@@ -420,7 +456,7 @@ body{
 
       }
       p{
-        font-family: 'Helvetica';
+        font-family: 'Basel-Grotesk-Book';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -487,9 +523,9 @@ body{
       align-items: flex-end;
     }
     .title{
-      font-family: 'Helvetica';
+      font-family: 'Basel-Grotesk-Bold';
       font-style: normal;
-      font-weight: 700;
+      // font-weight: 700;
       font-size: 38px;
       line-height: normal;
       color: #4A1A50;
@@ -499,9 +535,9 @@ body{
       font-size: 18px;
       line-height: 30px;
       color: #4a1a50;
-      font-weight: bold;
+      // font-weight: bold;
       // line-height: 30px;
-      font-family: "Helvetica";
+      font-family: "Basel-Grotesk-Book";
       // margin-top: 48px;
       display: inline-block;
       position: relative;
@@ -541,9 +577,9 @@ body{
     left: 0;
     padding-top: $space-top-menu;
     .title{
-      font-family: 'Helvetica';
+      font-family: 'Basel-Grotesk-Book';
       font-style: normal;
-      font-weight: 450;
+      font-weight: 400;
       font-size: 80px;
       line-height: 90px;
       color: #4A1A50;
@@ -583,7 +619,7 @@ body{
           background: #FFFFFF;
         }
         h1{
-          font-family: 'Helvetica';
+          font-family: 'Basel-Grotesk-Medium';
           font-style: normal;
           font-weight: 500;
           font-size: 38px;
@@ -592,7 +628,7 @@ body{
           margin-bottom: 12px;
         }
         p{
-          font-family: 'Helvetica';
+          font-family: 'Basel-Grotesk-Medium';
           font-style: normal;
           font-weight: 500;
           font-size: 18px;
@@ -663,7 +699,7 @@ body{
       padding: 100px;
       background-color: #ffffff;
       h2{
-        font-family: 'Helvetica';
+        font-family: 'Basel-Grotesk-Medium';
         font-style: normal;
         font-weight: 500;
         font-size: 38px;
@@ -672,7 +708,7 @@ body{
         margin-bottom: 12px
       }
       p{
-        font-family: 'Helvetica';
+        font-family: 'Basel-Grotesk-Medium';
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -683,7 +719,7 @@ body{
         background-color: transparent;
         padding-left: 0;
         h2{
-          font-weight: 700;
+          // font-weight: 700;
           font-size: 58px;
           line-height: 68px;
           color: #FFFFFF;
@@ -702,8 +738,11 @@ body{
     position: fixed;
     top: auto;
     left: auto;
+    height: 40px;
+    width: 40px;
     right: 68px;
     bottom: 68px;
+    padding: 8px;
     z-index: 99;
     display: none;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);

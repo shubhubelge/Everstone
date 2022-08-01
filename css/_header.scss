@@ -28,9 +28,9 @@
       color: #4a1a50;
       padding: 40px 0 40px 48px;
       display: block;
-      font-family: 'Helvetica';
+      font-family: 'Basel-Grotesk-Book';
       font-style: normal;
-      font-weight: 400;
+      // font-weight: 400;
       font-size: 13px;
       line-height: 16px;
       // position: relative;
@@ -53,7 +53,7 @@
         width: calc(100% - 110px);
         left: 0;
         // top: 90px;
-        z-index: 66;
+        z-index: 2;
         padding: 80px 60px;
         list-style: none;
 
@@ -69,9 +69,9 @@
 
         li {
           a {
-            font-family: 'Helvetica';
+            font-family: 'Basel-Grotesk-Book';
             font-size: 22px;
-            font-weight: 400;
+            // font-weight: 400;
             line-height: 65px;
             letter-spacing: 0em;
             text-align: left;
@@ -80,7 +80,8 @@
             left: 0;
             color: #4A1A50;
             &:hover{
-              font-weight: 600;
+              // font-weight: 600;
+              font-family: 'Basel-Grotesk-Bold';
               &::after{
                 content: " ";
                 height: 16px;
@@ -114,6 +115,7 @@
         }
         .link {
           // font-weight: 600;
+          font-family: 'Basel-Grotesk-Bold';
           &::before {
             visibility: visible;
           }

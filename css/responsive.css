@@ -261,7 +261,7 @@
            .main-wrapper .about-page .values-section .cor-content::before{right: 18px;}
            .main-wrapper .about-page .values-section .cor-content .values-carousel .item .text, .main-wrapper .about-page .profile-section .pr-subtitle, .main-wrapper .about-page .profile-section p 
            , .main-wrapper .about-page .lineage .stategey-box .lineage-carousel .item .list li, .main-wrapper .about-page .sectores .content-section .tab-container p, .main-wrapper .about-page .partner-section .text{
-               font-size: 14px; line-height: 18px;}
+               font-size: 14px; line-height: 18px; }
                .main-wrapper .about-page .lineage .stategey-box .lineage-carousel .item .list li{margin-bottom: 10px;}
                .main-wrapper .about-page .lineage::after{height: 176px;}
                .main-wrapper .about-page .sectores .tab-nav .link {
@@ -357,7 +357,7 @@
        height: 346px;
        padding-top:0;
    }
-   .main-wrapper .about-page .about-banner-area h1 {font-size:22px;}
+   .main-wrapper .about-page .about-banner-area h1 {font-size:32px;}
    .main-wrapper .about-page .white-boxs {width:150px;}
    .main-wrapper .about-page .white-boxs .box, .main-wrapper .about-page .values-section .cor-content::before, .main-wrapper .about-page .values-section .img-box::before, .main-wrapper .about-page .sectores::before {width:50px;height:50px;}
    /* section vmv */

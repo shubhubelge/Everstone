@@ -214,7 +214,6 @@
       margin-bottom: 24px;
       color: #4a1a50;
       font-family: "Helvetica";
-
     }
     p{
       font-size: 18px;
@@ -241,6 +240,9 @@
       position: absolute;
       left: - $width-of-box;
       bottom: 0;
+    }
+    .pr-subtitle{
+      margin-bottom: 60px;
     }
     .stategey-box{
       padding: 100px 80px;
@@ -723,6 +725,9 @@
             display: block;
             // transition: 2s;
 
+          }
+          p{
+            text-decoration: underline;
           }
         }
       }
