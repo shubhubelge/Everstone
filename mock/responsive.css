@@ -119,12 +119,12 @@
    /* section value */
    .main-wrapper .about-page .values-section .cor-content::before{right: 46px;}
    .main-wrapper .about-page .values-section .col-50{width: 100%;}
-   .main-wrapper .about-page .values-section .cor-content {padding:30px 42px 0 44px; height: 320px;}
+   .main-wrapper .about-page .values-section .cor-content {padding:30px 42px 0 44px;}
    .main-wrapper .about-page .values-section .cor-content .values-carousel .item p {margin-bottom: 40px;}
    .main-wrapper .about-page .values-section .cor-content .values-carousel .item .text{margin-bottom: 110px;}
-   .main-wrapper .about-page .values-section .cor-content h2{margin-bottom: 38px;}
+   .main-wrapper .about-page .values-section .cor-content .values-carousel .item h2{margin-bottom: 38px;}
    .main-wrapper .about-page .values-section .cor-content .values-carousel .item .number{    font-size: 95px;}
-   .main-wrapper .about-page .values-section .cor-content h2 {font-size: 22px;}
+   .main-wrapper .about-page .values-section .cor-content .values-carousel .item h2 {font-size: 22px;}
    .main-wrapper .about-page .values-section .cor-content .values-carousel .item p {
        font-size: 20px;margin-bottom: 24px;}
    .main-wrapper .about-page .profile-section {
@@ -207,7 +207,7 @@
    .main-wrapper .about-page .values-section .cor-content{padding: 30px 42px 0 18px;}
    .main-wrapper .about-page .profile-section, .main-wrapper .about-page .sectores{padding-top: 30px;}
    
-   .main-wrapper .about-page .values-section .cor-content h2{margin-bottom: 20px;}
+   .main-wrapper .about-page .values-section .cor-content .values-carousel .item h2{margin-bottom: 20px;}
    /* section vmv */
    .main-wrapper .about-page .vi-mi-section .text-content .text-box .vi-title{font-size:38px;}
    .main-wrapper .about-page .vi-mi-section .text-content .text-box p {font-size: 28px;}

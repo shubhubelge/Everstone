@@ -8,6 +8,7 @@
   filter: drop-shadow(0 0 25px rgba(0,0,0,0.1));
   background-color: #ffffff;
   box-shadow: 0 0 25px rgba(0,0,0,0.1);
+  position: relative;
   .di-flex {
     align-items: center;
   }
@@ -52,7 +53,7 @@
         width: calc(100% - 110px);
         left: 0;
         // top: 90px;
-        z-index: 2;
+        z-index: 66;
         padding: 80px 60px;
         list-style: none;
 

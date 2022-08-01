@@ -117,7 +117,7 @@
         992:{
           items:3,
           dots: false,
-      mouseDrag:false,
+          mouseDrag:false,
 
           // nav:true
         },
@@ -177,6 +177,33 @@
       navText: [$('.medialeft'), $('.mediaright')],
       // autoHeight:true,
       // autoplay: true,
+      autoplayTimeout: 5000,
+      loop:true,
+      smartSpeed: 2000,
+
+    })
+  };
+  if ($('#rsgCarousel').length) {
+    let rsgCarousel = $("#rsgCarousel").owlCarousel({
+      margin:20,
+      // items: 1,
+      dots: false,
+      nav:false,
+      items:5,
+      autoplayTimeout: 5000,
+      loop:true,
+      smartSpeed: 2000,
+
+    })
+  };
+  
+  if ($('#brandLinkCarousel').length) {
+    let brandLinkCarousel = $("#brandLinkCarousel").owlCarousel({
+      margin:20,
+      // items: 1,
+      dots: false,
+      nav:false,
+      items:5,
       autoplayTimeout: 5000,
       loop:true,
       smartSpeed: 2000,
