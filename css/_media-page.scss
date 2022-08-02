@@ -17,28 +17,28 @@
       .header-text{
         font-size: 14px;
         color: #4a1a50;
-        font-weight: bold;
-        font-family: "Helvetica";
+        // font-weight: bold;
+        font-family: "Basel-Grotesk-Bold";
         margin-bottom: 24px;
       }
       h2{
         font-size: 30px;
         color: #4a1a50;
-        font-family: "Helvetica";
+        font-family: "Basel-Grotesk-Bold";
         margin-bottom: 24px;
       }
       p{
         font-size: 18px;
         color: #4a1a50;
-        font-weight: bold;
-        font-family: "Helvetica";
+        // font-weight: bold;
+        font-family: "Basel-Grotesk-Bold";
         margin-bottom: 24px;
       }
       .text{
         font-size: 18px;
         line-height: 28px;
         color: #4a1a50;
-        font-family: "Helvetica";
+        font-family: "Basel-Grotesk-Book";
         margin-bottom: 16px;
       }
       .arrow-img{
@@ -48,8 +48,8 @@
         font-size: 200px;
         line-height: 46px;
         color: #4a1a50;
-        font-weight: bold;
-        font-family: "Helvetica";
+        // font-weight: bold;
+        font-family: "Basel-Grotesk-Bold";
         position: absolute;
         right: 0;
         bottom: -50px;
@@ -115,7 +115,7 @@
         font-size: 14px;
         line-height: 30px;
         color: #4a1a50;
-        font-family: "Helvetica";
+        font-family: "Basel-Grotesk-Book";
         
         &::before {
           background-image: url(./../assets/images/arrow-down-pur.png);
@@ -151,7 +151,7 @@
             // font-size: 14px;
             color: $purple;
             // font-weight: 400;
-            font-family: "Helvetica";
+            font-family: "Basel-Grotesk-Book";
             &::placeholder{
               color: $purple;
               opacity: 1;
@@ -282,30 +282,30 @@
     .category-type{
       font-size: 14px;
       color: #4a1a50;
-      font-weight: bold;
-      font-family: "Helvetica";
+      // font-weight: bold;
+      font-family: "Basel-Grotesk-Bold";
       margin-bottom: 32px;
     }
     .item-title{
       font-size: 30px;
       line-height: 40px;
       color: #4a1a50;
-      font-family: "Helvetica";
+      font-family: "Basel-Grotesk-Book";
       margin-bottom: 24px;
     }
     .date{
       font-size: 18px;
       line-height: 40px;
       color: #4a1a50;
-      font-weight: bold;
-      font-family: "Helvetica";
+      // font-weight: bold;
+      font-family: "Basel-Grotesk-Bold";
       margin-bottom: 24px;
     }
     p{
       font-size: 18px;
       line-height: 28px;
       color: #4a1a50;
-      font-family: "Helvetica";
+      font-family: "Basel-Grotesk-Book";
       margin-bottom: 24px;
     }
   }
@@ -316,8 +316,8 @@
     h2{
       font-size: 36px;
       color: #4a1a50;
-      font-weight: bold;
-      font-family: "Helvetica";
+      // font-weight: bold;
+      font-family: "Basel-Grotesk-Bold";
       margin-bottom: 32px;
     }
     .other-news-link{
@@ -328,8 +328,8 @@
       .li-header{
         font-size: 14px;
         color: #4a1a50;
-        font-weight: bold;
-        font-family: "Helvetica";
+        // font-weight: bold;
+        font-family: "Basel-Grotesk-Bold";
         margin-bottom: 28px;
         text-transform: uppercase;
       }
@@ -337,13 +337,13 @@
         font-size: 24px;
         line-height: 34px;
         color: #4a1a50;
-        font-family: "Helvetica";
+        font-family: "Basel-Grotesk-Book";
       }
       .link-date{
         font-size: 18px;
         color: #4a1a50;
-        font-weight: bold;
-        font-family: "Helvetica";
+        // // font-weight: bold;
+        font-family: "Basel-Grotesk-Bold";
       }
     }
   }

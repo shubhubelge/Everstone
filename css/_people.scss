@@ -59,27 +59,27 @@
         .number{
           font-size: 70px;
           color: #4a1a50;
-          font-weight: bold;
-          font-family: "Helvetica";
+          // font-weight: bold;
+          font-family: "Basel-Grotesk-Bold";
           margin-bottom: 32px;
           span{
             font-size: 36px;
             color: #4a1a50;
-            font-weight: bold;
-            font-family: "Helvetica";
+            // font-weight: bold;
+            font-family: "Basel-Grotesk-Bold";
           }
         }
         .subtitle{
           font-size: 18px;
           line-height: 28px;
           color: #4a1a50;
-          font-family: "Helvetica";
+          font-family: "Basel-Grotesk-Book";
         }
       }
       .rt{
         align-self: flex-end;
         .title{
-          font-family: 'Helvetica';
+          font-family: 'Basel-Grotesk-Medium';
           font-style: normal;
           font-weight: 500;
           font-size: 38px;
@@ -117,9 +117,9 @@
   //   gap: 100px;
   // }
   .pe-title{
-    font-family: 'Helvetica';
+    font-family: 'Basel-Grotesk-Bold';
     font-style: normal;
-    font-weight: bold;
+    // font-weight: bold;
     font-size: 38px;
     line-height: 46px;
     color: #FFFFFF;
@@ -167,9 +167,9 @@
       // }
     }
     .name, .position{
-      font-family: 'Helvetica';
+      font-family: 'Basel-Grotesk-Medium';
       font-style: normal;
-      font-weight: 700;
+      // font-weight: 700;
       font-size: 18px;
       line-height: 22px;
       color: #FFFFFF;
@@ -177,14 +177,14 @@
       margin-bottom: 8px;
     }
     .position{
-      font-weight: 400;
-
+      // font-weight: 400;
+      font-family: 'Basel-Grotesk-Bold';
     }
     .location{
       display: flex;
-      font-family: 'Helvetica';
+      font-family: 'Basel-Grotesk-Book';
       font-style: normal;
-      font-weight: 500;
+      // font-weight: 500;
       font-size: 15px;
       line-height: 18px;
       color: #FFFFFF;
@@ -282,7 +282,7 @@
   //     right: 0;
   //   }
   //   .fo-title{
-  //     font-family: 'Helvetica';
+  //     font-family: 'Basel-Grotesk-Book';
   //     font-style: normal;
   //     font-weight: 700;
   //     font-size: 58px;
@@ -290,7 +290,7 @@
   //     color: #4A1A50;
   //   }
   //   p{
-  //     font-family: 'Helvetica';
+  //     font-family: 'Basel-Grotesk-Book';
   //     font-style: normal;
   //     font-weight: 400;
   //     font-size: 58px;
@@ -299,7 +299,7 @@
   //     margin-bottom: 60px;
   //   }
   //   .text{
-  //     font-family: 'Helvetica';
+  //     font-family: 'Basel-Grotesk-Book';
   //     font-style: normal;
   //     font-weight: 450;
   //     font-size: 34px;

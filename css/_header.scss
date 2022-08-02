@@ -121,6 +121,12 @@
           }
         }
       }
+      .active-header{
+        font-family: 'Basel-Grotesk-Bold';
+          &::before {
+            visibility: visible;
+          }
+      }
     }
   }
   .login-search{
@@ -154,9 +160,9 @@
         max-width: 100%;
         margin: 0 auto;
       }
-      &:hover{
-        background-image: url('./../assets/images/search-bg.png');
-      }
+      // &:hover{
+      //   background-image: url('./../assets/images/search-bg.png');
+      // }
     }
     .login-btn{
       background-color: #510B46;

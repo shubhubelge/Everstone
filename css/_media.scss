@@ -892,7 +892,7 @@
   }
   .main-wrapper .rsg-page .our-commit .text-container{
     width: calc(100% - 60px);
-    padding: 40px 40px 70px 40px;
+    padding: 40px 16px 64px 24px;
   }
   .main-wrapper .rsg-page .our-commit h2{
     font-size: 24px;
@@ -963,6 +963,61 @@
   .main-wrapper .about-page .profile-section p br{
     display: none;
   }
+  .main-wrapper .report-page .about-banner-area h1{
+    br{
+      display: none;
+    }
+  }
+  .main-wrapper .report-page .policy-section .info-box, .main-wrapper .report-page .policy-section.last-ch .info-box{
+    padding: 60px 0;
+    padding-right: 60px;
+  }
+  .main-wrapper .report-page .policy-section h2{
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 24px;
+  }
+  .main-wrapper .report-page .policy-section::after, .main-wrapper .report-page .policy-section.bg-color::after{
+    width: 60px;
+    height: 60px;
+    right: 0;
+  }
+  .main-wrapper .report-page .policy-section .number{
+    font-size: 98px;
+    line-height: 40px;
+    left: auto;
+    right: 80px;
+  }
+  .main-wrapper .report-page .policy-section p{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: $poppins;
+    br{
+      display: none;
+    }
+  }
+  .main-wrapper .report-page .btnDownload{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: $poppins;
+  }
+
+  .main-wrapper .report-page .policy-section.last-ch::after {
+    content: "";
+    width: 60px;
+    height: 120px;
+    border-right: 60px solid #4a1a50;
+    border-top: none;
+    position: absolute;
+  }
+  .main-wrapper .rsg-page .our-approch .rsg-carousel .item .image-bg, .main-wrapper .rsg-page .our-approch .brand-link-carousel .item .image-bg{
+    height: 108px;
+  }
+  // .main-wrapper .report-page .policy-section.last-ch .info-box{
+  //   padding-right: 60px;
+  // }
 }
 
 @media (max-width: 767.98px) {

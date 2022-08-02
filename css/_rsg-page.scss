@@ -25,7 +25,7 @@
     top: auto;
   }
   .misson-section{
-    padding: 120px 0 0 0;
+    padding: 120px 0 80px 0;
     background-color: $yellow;
     // .container{
     //   position: relative;
@@ -68,14 +68,15 @@
       p{
         font-size: 30px;
         color: $purple;
-        font-family: "Helvetica";
+        font-family: "Basel-Grotesk-Book";
         margin-bottom: 24px;
       }
       .text-second{
-        font-size: 20px;
+        font-size: 18px;
         color: $purple;
-        font-family: "Helvetica";
+        font-family: "Basel-Grotesk-Book";
         margin-bottom: 24px;
+        line-height: 28px;
       }
     }
   }
@@ -119,15 +120,14 @@
       font-size: 36px;
       line-height: 46px;
       color: $white;
-      font-weight: bold;
-      font-family: "Helvetica";
+      font-family: "Basel-Grotesk-Book";
       margin-bottom: 24px;
     }
     p{
       font-size: 18px;
       line-height: 28px;
       color: $white;
-      font-family: "Helvetica";
+      font-family: "Basel-Grotesk-Book";
       margin-bottom: 32px;
 
     }
@@ -135,20 +135,20 @@
   }
   .list-box{
     list-style: none;
-    padding-right: 24px;
+    padding-right: 8px;
     li {
       padding-left: 16px;
       position: relative;
       margin-bottom: 36px;
       font-size: 18px;
-      line-height: 22px;
+      line-height: 28px;
       color: $white;
-      font-family: "Helvetica";
+      font-family: "Basel-Grotesk-Book";
       &::before {
         content: " ";
         height: 8px;
         width: 8px;
-        top: 4px;
+        top: 6px;
         margin-top: 0;
         background-color: $white;
         display: inline-block;
@@ -187,7 +187,7 @@
       line-height: 46px;
       color: #4a1a50;
       font-weight: bold;
-      font-family: "Helvetica";
+      font-family: "Basel-Grotesk-Book";
       margin-bottom: 24px;
     }
     .rsg-carousel{
@@ -196,9 +196,7 @@
         margin-bottom: 48px;
         .image-bg{
           border-radius: 2px;
-          filter: drop-shadow(0 0 4.5px rgba(0,0,0,0.07));
-          background-color: #ede8ee;
-          box-shadow: 0 0 4.5px rgba(0,0,0,0.07);
+          background-color: #fbfbfb;
           height: 160px;
           margin-bottom: 24px;
           position: relative;
@@ -220,7 +218,7 @@
           line-height: 24px;
           color: #4a1a50;
           font-weight: bold;
-          font-family: "Helvetica";
+          font-family: "Basel-Grotesk-Bold";
         }
       }
     }
@@ -244,6 +242,8 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          padding: 8px;
+
           img{
             width: auto;
             filter: grayscale(100%);
@@ -270,7 +270,7 @@
           line-height: 24px;
           text-decoration: underline;
           color: #4a1a50;
-          font-family: "Helvetica";
+          font-family: "Basel-Grotesk-Book";
           display: block;
           text-overflow: ellipsis;
           white-space: nowrap;
@@ -316,8 +316,8 @@
       font-size: 24px;
       line-height: 46px;
       color: #4a1a50;
-      font-weight: bold;
-      font-family: "Helvetica";
+      // font-weight: bold;
+      font-family: "Basel-Grotesk-Bold";
       margin-bottom: 8px;
     }
     &::after {
@@ -334,33 +334,108 @@
       font-size: 18px;
       line-height: 30px;
       color: $purple;
-      font-family: "Helvetica";
+      font-family: "Basel-Grotesk-Book";
       .download{
         display: inline-block;
         margin-left: 8px;
       }
     }
   }
+  
+}
+.report-page{
+// background-color: red;
+  .white-boxs .fill{
+    background-color: $white;
+    &::after {
+      border-color: $white;
+    }
+  }
   .about-page-nav{
     h2{
       font-size: 36px;
       color: #ffffff;
-      font-family: "Helvetica";
+      font-family: "Basel-Grotesk-Book";
       padding: 36px;
     }
   }
   .policy-section{
-    padding: 80px 0;
-    .info-box{
-      margin-bottom: 40px;
+    position: relative;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    &::after {
+      content: "";
+      height: 140px;
+      width: 140px;
+      background-color: $purple;
+      position: absolute;
+      right: 0px;
+      bottom: 0;
     }
-    h2{
-      font-size: 24px;
-      line-height: 46px;
+    .container{
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+    &.bg-color{
+      background-color: $purple;
+      h2 , p, .btnDownload{
+        color: $white;
+      }
+      .number{
+        color: $yellow;
+      }
+      &::after {
+        content: "";
+        height: 140px;
+        width: 140px;
+        background-color: $white;
+        position: absolute;
+        right: 140px;
+        bottom: 0;
+      }
+
+    }
+    &.last-ch{
+      .info-box{
+        padding: 220px 0;
+      }
+      &::after {
+        content: "";
+        width: 280px;
+        height: 420px;
+        border: none;
+        border-right: 140px solid #4a1a50;
+        border-top: 140px solid #4a1a50;
+        position: absolute;
+        right: 0px;
+        top: 0;
+        background-color: transparent;
+    }
+    }
+    .info-box{
+      padding: 160px 0;
+      
+      // margin-bottom: 40px;
+    }
+    .number{
+      position: absolute;
+      font-size: 200px;
+      line-height: 80px;
       color: #4a1a50;
       font-weight: bold;
-      font-family: "Helvetica";
-      margin-bottom: 24px;
+      font-family: "Basel-Grotesk-Book";
+      left: 0;
+      bottom: 0;
+    }
+    h2{
+      font-size: 36px;
+      line-height: 46px;
+      color: #4a1a50;
+      // font-weight: bold;
+      font-family: "Basel-Grotesk-Bold";
+      margin-bottom: 40px;
     }
     .list-box li{
       color: $purple;
@@ -368,39 +443,31 @@
         background-color: $purple;
       }
     }
+    p{
+      font-size: 18px;
+      line-height: 28px;
+      color: #4a1a50;
+      font-family: "Basel-Grotesk-Book";
+      margin-bottom: 24px;
+    }
   }
   .btnDownload{
-    background-color: #fff;
-    border: 2px solid #4a1a50;
     font-size: 18px;
     line-height: 30px;
     color: #4a1a50;
-    font-weight: bold;
-    font-family: "Helvetica";
-    width: 96%;
-    position: relative;
-    left: 0;
-    top: 0;
-    height: 80px;
+    font-family: "Basel-Grotesk-Bold";
     margin-bottom: 24px;
-    // padding-rig/ht: 24px;
-    &::after {
-      content: " ";
-      position: absolute;
-      display: block;
-      width: 8px;
-      height: 8px;
-      top: -2px;
-      right: -2px;
-      background-color: #fff;
-      border-left: 2px solid #4a1a50;
-      border-bottom: 2px solid #4a1a50;
+    display: block;
+    .download {
+      display: inline-block;
+      margin-left: 8px;
     }
+  
   }
   .text-box{
     font-size: 18px;
     line-height: 28px;
     color: #4a1a50;
-    font-family: "Helvetica";
+    font-family: "Basel-Grotesk-Book";
   }
 }

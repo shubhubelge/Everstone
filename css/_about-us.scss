@@ -23,16 +23,16 @@
     }
     .lt{
       align-self: center;
-      font-family: 'Helvetica';
+      font-family: 'Basel-Grotesk-Book';
       font-style: normal;
-      font-weight: 450;
+      // font-weight: 450;
       font-size: 80px;
       line-height: 90px;
       color: #4A1A50;
       h1{
-        font-family: 'Helvetica';
+        font-family: 'Basel-Grotesk-Book';
         font-style: normal;
-        font-weight: 450;
+        // font-weight: 450;
         font-size: 80px;
         line-height: 90px;
         color: #4A1A50;
@@ -59,9 +59,9 @@
     top: 0;
     left: 0;
     .title{
-      font-family: 'Helvetica';
+      font-family: 'Basel-Grotesk-Medium';
       font-style: normal;
-      font-weight: 500;
+      // font-weight: 500;
       font-size: 38px;
       line-height: 46px;
       color: #4A1A50;
@@ -69,9 +69,9 @@
 
     }
     p{
-      font-family: 'Helvetica';
+      font-family: 'Basel-Grotesk-Medium';
       font-style: normal;
-      font-weight: 500;
+      // font-weight: 500;
       font-size: 18px;
       line-height: normal;
       color: #4A1A50;
@@ -101,26 +101,26 @@
       background: #4A1A50;
     }
     .title{
-      font-family: 'Helvetica';
+      font-family: 'Basel-Grotesk-Bold';
       font-style: normal;
-      font-weight: 700;
+      // font-weight: 700;
       font-size: 48px;
       line-height: 58px;
       color: #4A1A50;
     }
     .subtitle{
-      font-family: 'Helvetica';
+      font-family: 'Basel-Grotesk-Medium';
       font-style: normal;
-      font-weight: 500;
+      // font-weight: 500;
       font-size: 48px;
       line-height: 58px;
       color: #4A1A50;
       margin-bottom: 24px;
     }
     .link{
-      font-family: 'Helvetica';
+      font-family: 'Basel-Grotesk-Medium';
       font-style: normal;
-      font-weight: 500;
+      // font-weight: 500;
       font-size: 25px;
       line-height: 22px;
       color: #4A1A50;
@@ -170,17 +170,17 @@
       margin-left: 24px;
       
       .author-name{
-        font-family: 'Helvetica';
+        font-family: 'Basel-Grotesk-Bold';
         font-style: normal;
-        font-weight: 700;
+        // font-weight: 700;
         font-size: 22px;
         line-height: 26px;
         color: #4A1A50;
       }
       .author-sub{
-        font-family: 'Helvetica';
+        font-family: 'Basel-Grotesk-Book';
         font-style: normal;
-        font-weight: 400;
+        // font-weight: 400;
         font-size: 22px;
         line-height: 26px;
         color: #4A1A50;
@@ -197,9 +197,9 @@
     .client-left{
       width: 36%;
       .title{
-        font-family: 'Helvetica';
+        font-family: 'Basel-Grotesk-Medium';
         font-style: normal;
-        font-weight: 500;
+        // font-weight: 500;
         font-size: 38px;
         line-height: 46px;
         color: #FFFFFF;
@@ -207,9 +207,9 @@
 
       }
       p{
-        font-family: 'Helvetica';
+        font-family: 'Basel-Grotesk-Book';
         font-style: normal;
-        font-weight: 400;
+        // font-weight: 400;
         font-size: 18px;
         line-height: 24px;
         color: #FFFFFF;
@@ -296,9 +296,9 @@
       list-style: none;
     }
     .link{
-      font-family: 'Helvetica';
+      font-family: 'Basel-Grotesk-Book';
       font-style: normal;
-      font-weight: 450;
+      // font-weight: 450;
       font-size: 30px;
       line-height: 53px;
       color: #4A1A50;
@@ -343,17 +343,17 @@
       padding: 100px 160px ;
 
       p{
-        font-family: 'Helvetica';
+        font-family: 'Basel-Grotesk-Medium';
         font-style: normal;
-        font-weight: 500;
+        // font-weight: 500;
         font-size: 38px;
         line-height: 50px;
         color: #4A1A50;
       }
       .author{
-        font-family: 'Helvetica';
+        font-family: 'Basel-Grotesk-Book';
         font-style: normal;
-        font-weight: 450;
+        // font-weight: 450;
         font-size: 25px;
         line-height: 22px;
         color: #4A1A50;
@@ -408,9 +408,9 @@
     background-color: #4A1A50;
     padding: 36px 0;
     text-align: center;
-    font-family: 'Helvetica';
+    font-family: 'Basel-Grotesk-Book';
     font-style: normal;
-    font-weight: 400;
+    // font-weight: 400;
     font-size: 18px;
     line-height: 27px;
     text-align: center;
@@ -422,7 +422,8 @@
     &:hover{
       color: #4A1A50;
       background-color: #AAFF31;
-      font-weight: 600;
+      // font-weight: 600;
+      font-family: 'Basel-Grotesk-Medium';
 
     }
   }
