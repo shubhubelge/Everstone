@@ -207,7 +207,7 @@
       nav:false,
       // items:5,
       autoplayTimeout: 5000,
-      loop:true,
+      // loop:true,
       smartSpeed: 2000,
       responsive:{
         0:{
@@ -223,7 +223,7 @@
     $('.mobile-menu').toggleClass('open')
   })
   $('.mobile-menu').click((e)=>{
-    console.log("click")
+    // console.log("click")
     if (!$(e.target).closest('.link-cotainer').length){
       $(".mobile-menu").toggleClass('open')
     }
@@ -351,7 +351,7 @@ let gotoIdNav = (id) =>{
     
 };
 function tabChange(tab){
-  console.log("this");
+  // console.log("this");
   $('.tab-nav .link').removeClass('active');
   $('.tab-nav .'+tab).addClass('active');
   $('.content-section .tab-container').removeClass('active');
@@ -406,3 +406,6 @@ $(document).ready(function(){
     }
   });
 });
+$(".nav-acc-link").click(() =>{
+  $('.sub-list').toggleClass('sub-list-active')
+})
