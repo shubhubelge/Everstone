@@ -1,0 +1,1 @@
+.acc-header{background-color:#fff;position:relative;padding:40px 0}.acc-header .logo-box{width:20%}.acc-header .nav-bar{width:60%;list-style:none;display:flex}.acc-header .nav-bar .link{color:#4A1A50}.acc-header .nav-bar .link .sub-list{display:none}.acc-header .nav-bar .link:hover .sub-list{display:block;position:absolute;background-color:red;width:100%}

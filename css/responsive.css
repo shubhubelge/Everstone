@@ -1,0 +1,388 @@
+ /* 576px, 768px, 992px, and 1200px.
+ 768px, 769px, 1024px, 1216px, and 1408px. */
+ @media screen and (max-width:1179px){
+    /* value */
+   .main-wrapper .about-page .values-section .cor-content {padding-left:75px;}
+   .owl-theme .owl-dots .owl-dot span {
+       width: 8px;
+       height: 8px;
+       margin: 5px 7px;
+       background: #d7d7d7;
+       border-radius: 0;}
+       .main-wrapper .about-page .lineage .stategey-box .lineage-carousel .item .list li {
+          line-height: 24px;
+       }
+       .owl-theme .owl-dots .owl-dot.active span{background:#4a1a50;} 
+       .main-wrapper .about-page .awards-section .owl-section {
+           padding: 116px 0;
+           background-size: 280px;
+           background-position: right center;
+       }
+       .main-wrapper .about-page .awards-section .owl-section .awards-carousel {
+           max-width: 574px;
+           width: 100%;
+       }
+       .main-wrapper .about-page .awards-section .owl-section .awards-carousel .item {padding: 50px;}
+
+       /* partener */
+       .main-wrapper .about-page .partner-section .acc-container .inner-content {
+           padding: 30px 30px 0 30px;
+       }
+       .main-wrapper .about-page .partner-section .acc-container .panel .text-box {
+           padding-left: 30px;
+       }
+       .main-wrapper .about-page .partner-section .acc-container .panel .item {
+           margin-bottom: 30px;
+       }
+       .partner-section .par-subtitle br{display: none;}
+       /* map */
+       .main-wrapper .about-page .map-section .bg-map-img .mumbai {
+           top: 52%;
+       }
+}
+@media screen and (max-width:1023px){
+   .main-wrapper .about-page-nav .sub-navbar {
+       justify-content: inherit;
+       display: inline-block;
+       text-align: center;
+       width: 100%;
+       align-items: inherit;
+       padding-top: 30px;
+       padding-bottom: 30px;
+   }
+   .main-wrapper .about-page-nav .link {
+       width: max-content;
+       position: inherit;
+       margin: 16px 4px 0 4px;
+       /* top: 0; */
+       /* left: 0; */
+       font-size: 18px;
+       line-height: 36px;
+       padding: 0;
+       padding-right: 24px;
+       display: inline-block;
+   }
+       
+   .main-wrapper .about-page .vi-mi-section .text-content {
+       padding: 85px 40px 85px 0;
+   }
+   .main-wrapper .about-page .awards-section .border-left {
+       width: 116px;
+       border-top: 116px solid #4a1a50;
+       border-bottom: 116px solid #4a1a50;
+   }
+   .main-wrapper .about-page .awards-section .owl-section::before {
+       width: 116px;
+   }
+   .main-wrapper .about-page .awards-section .owl-section .awards-carousel .item::before {
+       height: 116px;
+       width: 116px;
+   }
+   .main-wrapper .about-page .awards-section .owl-section .awards-carousel .item .i-title {
+       font-size: 60px;
+       color: #000;
+       /* font-weight: bold; */
+       font-family: "Basel-Grotesk-Bold";
+       padding-bottom: 20px;
+   }
+   .main-wrapper .about-page .awards-section .owl-section {background:#4a1a50;width: calc(100% - 116px);}
+   .main-wrapper .about-page .awards-section .owl-section .awards-carousel {
+       max-width: 620px;
+   }
+   .main-wrapper .about-page .awards-section .owl-section .awards-carousel.owl-theme .owl-dots {
+       right: auto;
+       width: 100%;
+   }
+   
+
+
+
+
+   
+}
+@media screen and (max-width:992px){
+   .main-wrapper .about-page .about-banner-area {      
+       min-height: 610px;
+       max-height: 640px;
+       height: 610px;
+       padding-top: 0;
+   }
+   .main-wrapper .about-page .about-banner-area h1 {font-size:48px;}
+   .main-wrapper .about-page .white-boxs {width:350px;}
+   .main-wrapper .about-page .white-boxs .box, .main-wrapper .about-page .values-section .cor-content::before, .main-wrapper .about-page .values-section .img-box::before, .main-wrapper .about-page .sectores::before {width: 116px;height: 116px;}
+       .main-wrapper .about-page .vi-mi-section .text-content {padding: 20px 40px 0 0;}
+       .main-wrapper .about-page-nav .sub-navbar {padding-top: 20px;padding-bottom: 20px;}
+       .main-wrapper .about-page-nav .link {font-size: 14px;position: relative;}
+   /* section vmv */
+   .main-wrapper .about-page .vi-mi-section .text-content .text-box .vi-title{font-size:38px;}
+   .main-wrapper .about-page .vi-mi-section .text-content .text-box p {font-size: 28px;}
+   /* section value */
+   .main-wrapper .about-page .values-section .cor-content::before{right: 46px;}
+   .main-wrapper .about-page .values-section .col-50{width: 100%;}
+   .main-wrapper .about-page .values-section .cor-content {padding:30px 42px 0 44px; height: 320px;}
+   .main-wrapper .about-page .values-section .cor-content .values-carousel .item p {margin-bottom: 40px;}
+   .main-wrapper .about-page .values-section .cor-content .values-carousel .item .text{margin-bottom: 110px;}
+   .main-wrapper .about-page .values-section .cor-content h2{margin-bottom: 38px;}
+   .main-wrapper .about-page .values-section .cor-content .values-carousel .item .number{    font-size: 95px;}
+   .main-wrapper .about-page .values-section .cor-content h2 {font-size: 22px;}
+   .main-wrapper .about-page .values-section .cor-content .values-carousel .item p {
+       font-size: 20px;margin-bottom: 24px;}
+   .main-wrapper .about-page .profile-section {
+       border-left: 116px solid #4a1a50;
+       padding:50px 30px 146px 30px;
+   }
+   .main-wrapper .about-page .lineage{border-color: #fff;}
+   .main-wrapper .about-page .lineage::after {
+       content: "";
+       height:276px;
+       width:276px;
+       /* border-left:116px solid #4a1a50; */
+       border-bottom: 116px solid #4a1a50;
+   }
+   .main-wrapper .about-page .lineage .stategey-box {
+       padding: 100px 220px 100px 80px;}
+       .main-wrapper .about-page .lineage .stategey-box .lineage-carousel .item .list li {
+           line-height: 28px;
+       }
+
+       /* partner */
+       .main-wrapper .about-page .partner-section {
+           padding: 40px 0;
+       }
+       .main-wrapper .about-page .partner-section .col-50{width: 100%;}
+       .main-wrapper .about-page .partner-section h2 {margin-bottom: 15px;}
+       .main-wrapper .about-page .partner-section .par-subtitle {margin-bottom: 15px;}
+       .main-wrapper .about-page .partner-section .text {padding-bottom: 25px;}
+
+/* Sectors */
+.main-wrapper .about-page .sectores {
+   padding:40px 0 30px 26px;
+}
+.main-wrapper .about-page .sectores .di-flex {
+   flex-wrap: nowrap;
+   display: block;
+   width: 100%;
+}
+.main-wrapper .about-page .sectores .se-title {text-align: center;    margin-left: -26px;}
+.main-wrapper .about-page .sectores .tabbing-section {width:100%;}
+.main-wrapper .about-page .sectores .tab-nav{overflow-x: scroll;overflow-y: hidden;
+   /* width: 80%; */
+    margin-bottom: 40px;white-space: nowrap;}
+.main-wrapper .about-page .sectores .tab-nav div{display: inline-block;}
+.main-wrapper .about-page .sectores .content-section {padding-left: 0;}
+.main-wrapper .about-page .sectores .content-section .tab-container .con-title span {
+   font-size: 40px;
+}
+.main-wrapper .about-page .profile-section .pr-subtitle {
+   font-size: 18px;
+}
+.main-wrapper .about-page .sectores .content-section .tab-container p {
+   font-size: 18px;
+
+}
+.main-wrapper .about-page .sectores .content-section {width: 94%;}
+/* Award section */
+
+/* map section */
+
+.main-wrapper .about-page .map-section::after{height: 276px;width: 276px;border-left: 116px solid #fff;border-bottom: 116px solid #fff;}
+.main-wrapper .about-page .map-section .bg-map-img .dot .city-name{font-size: 14px;}
+/* everstone group */
+.main-wrapper .about-page .ever-section .text-contet .c-title{font-size: 30px;}
+
+}
+
+@media screen and (max-width:867px){
+   .main-wrapper .about-page .about-banner-area h1 {font-size: 40px;}
+}
+@media screen and (max-width:767px){
+   .main-wrapper .about-page .about-banner-area {min-height: 520px;
+       max-height: 580px;
+       height: 520px;
+       padding-top:0;
+   }
+   .main-wrapper .about-page .about-banner-area h1 {font-size:28px;}
+   .main-wrapper .about-page .white-boxs {width:246px;}
+   .main-wrapper .about-page .white-boxs .box, .main-wrapper .about-page .values-section .cor-content::before, .main-wrapper .about-page .values-section .img-box::before, .main-wrapper .about-page .sectores::before {width: 82px;height: 82px;}
+   .main-wrapper .about-page .values-section .cor-content{padding: 30px 42px 0 18px;}
+   .main-wrapper .about-page .profile-section, .main-wrapper .about-page .sectores{padding-top: 30px;}
+   
+   .main-wrapper .about-page .values-section .cor-content h2{margin-bottom: 20px;}
+   /* section vmv */
+   .main-wrapper .about-page .vi-mi-section .text-content .text-box .vi-title{font-size:38px;}
+   .main-wrapper .about-page .vi-mi-section .text-content .text-box p {font-size: 28px;}
+   .main-wrapper .about-page .vi-mi-section .text-content .text-box, .main-wrapper .about-page .profile-section .pr-title {margin-bottom: 20px;}
+   .main-wrapper .about-page .vi-mi-section .text-content {padding: 30px 0 0 0;}
+   .main-wrapper .about-page .profile-section {
+       border-left: 50px solid #4a1a50;
+       padding-bottom:15px;
+   }
+   .main-wrapper .about-page .profile-section.lineage {
+       padding-bottom:80px;
+   }
+   .main-wrapper .about-page .lineage{border-color: #fff;}
+   .main-wrapper .about-page .lineage::after {
+       border-bottom: 50px solid #4a1a50;
+   }
+   .main-wrapper .about-page .lineage .stategey-box {padding: 30px 50px 45px 20px;}
+   .main-wrapper .about-page .sectores .content-section {width: 100%};
+   .main-wrapper .about-page .sectores .content-section .tab-container p {font-size: 26px}
+
+   .main-wrapper .about-page .awards-section .border-left {
+       width: 50px;
+       border-top: 50px solid #4a1a50;
+       border-bottom: 50px solid #4a1a50;
+   }
+   .main-wrapper .about-page .awards-section .owl-section::before {
+       width: 50px;
+   }
+   .main-wrapper .about-page .awards-section .owl-section {
+       padding: 50px 0;
+   }
+   .main-wrapper .about-page .awards-section .owl-section .awards-carousel {
+       max-width:calc(100% - 30px)
+   }
+   .main-wrapper .about-page .awards-section .owl-section .awards-carousel .item::before {
+       height: 50px;
+       width: 50px;
+   }
+   .main-wrapper .about-page .awards-section .owl-section {
+       width: calc(100% - 50px);
+   }
+   .main-wrapper .about-page .awards-section .owl-section .awards-carousel .item .i-title {
+       font-size: 30px;}
+
+       .main-wrapper .about-page .awards-section .owl-section .awards-carousel .item p, .main-wrapper .about-page .awards-section .owl-section .awards-carousel .item .i-subtitle, .main-wrapper .about-page .partner-section h2{
+           font-size: 22px;}
+           .main-wrapper .about-page .awards-section .owl-section .awards-carousel .item .small-text {
+               font-size:14px;
+           }      
+           .main-wrapper .about-page .awards-section .owl-section .awards-carousel.owl-theme .owl-dots {bottom: -40px;}
+           .main-wrapper .about-page .values-section .cor-content::before{right: 18px;}
+           .main-wrapper .about-page .values-section .cor-content .values-carousel .item .text, .main-wrapper .about-page .profile-section .pr-subtitle, .main-wrapper .about-page .profile-section p 
+           , .main-wrapper .about-page .lineage .stategey-box .lineage-carousel .item .list li, .main-wrapper .about-page .sectores .content-section .tab-container p, .main-wrapper .about-page .partner-section .text{
+               font-size: 14px; line-height: 18px; }
+               .main-wrapper .about-page .lineage .stategey-box .lineage-carousel .item .list li{margin-bottom: 10px;}
+               .main-wrapper .about-page .lineage::after{height: 176px;}
+               .main-wrapper .about-page .sectores .tab-nav .link {
+                   font-size: 14px;
+                   padding-right: 28px;
+               }
+               .main-wrapper .about-page .sectores .tab-nav .link::after{right: 11px;}
+               .main-wrapper .about-page .sectores .tab-nav {margin-bottom: 20px;}
+           /* partner */
+           .main-wrapper .about-page .partner-section .acc-container .accordion {
+               padding:15px 22px;}
+               .main-wrapper .about-page .partner-section .acc-container .accordion::before {top: 23px;}
+               .main-wrapper .about-page .partner-section .acc-container .accordion {font-size: 14px;}
+
+           /* map section */
+           .main-wrapper .about-page .map-section::after{height: 150px;width: 150px;border-left: 50px solid #fff;border-bottom:50px solid #fff;}
+           .main-wrapper .about-page .map-section .bg-map-img .delhi {
+               top: 42%;
+               left: 67%;
+           }
+           .main-wrapper .about-page .map-section .bg-map-img .dot .city-name.left {
+               font-size: 12px;
+           }
+           .main-wrapper .about-page .map-section .bg-map-img .dubai {
+               left: 60%;
+           }
+           .main-wrapper .about-page .map-section .bg-map-img .singapore {
+               top: 64.5%;
+               left: 74%;
+           }
+           
+           
+.main-wrapper .about-page .map-section .bg-map-img .mumbai {
+   top: 50%;
+}
+.main-wrapper .about-page .map-section .bg-map-img .dot {
+   width: 16px;
+   height: 16px;}
+
+   .main-wrapper .about-page .map-section .bg-map-img .dot::after {
+       font-size: 14px;
+       line-height: 15px;
+   }
+ .main-wrapper .about-page .map-section .bg-map-img .popup p {
+       line-height: 18px;
+       font-size: 14px;
+   }
+   
+   .main-wrapper .about-page .map-section .bg-map-img .popup {
+       bottom: -40px;
+       left: -40px;
+       width: 240px;
+       padding: 20px 0 20px 20px;
+   }
+   .main-wrapper .about-page .map-section .bg-map-img .new-york .popup{left: -66%;}
+   .main-wrapper .about-page .map-section .bg-map-img .mauritius .popup, .main-wrapper .about-page .map-section .bg-map-img .singapore .popup, .main-wrapper .about-page .map-section .bg-map-img .bengaluru .popup, .main-wrapper .about-page .map-section .bg-map-img .mumbai .popup, .main-wrapper .about-page .map-section .bg-map-img .delhi .popup,  .main-wrapper .about-page .map-section .bg-map-img .dubai .popup {left: auto;
+       right: -62px;}
+       .main-wrapper .about-page .map-section .bg-map-img .dot .city-name{min-width: auto;}
+       .main-wrapper .about-page .map-section .bg-map-img .new-york .city-name{min-width: 100px;}
+   /* everstone group */
+   .main-wrapper .about-page .ever-section .col-50{width: 100%;}
+   .main-wrapper .about-page .ever-section{padding: 40px 0;}
+   .main-wrapper .about-page .ever-section .text-contet {
+       padding-left: 0;
+       max-width: 300px;
+       margin: 0 auto;
+       text-align: center;
+   }
+   .main-wrapper .about-page .ever-section .text-contet .c-title {
+       font-size: 22px;
+       padding: 20px 0 0;
+       margin-bottom: 10px;
+   }
+   .main-wrapper .about-page .ever-section .company-logo .logo-img {
+       padding: 48px 0;
+       display: block;
+       /* width: auto; */
+   }
+   .main-wrapper .about-page .partner-section .par-subtitle{font-size: 18px;}
+   .main-wrapper .about-page-nav .link{position: relative;}
+   .main-wrapper .about-page-nav .link::after {
+       height: 14px;
+       width: 16px;
+       top: -7px;
+       right:-4px;
+   }
+
+}
+@media screen and (max-width:576px){
+   .main-wrapper .about-page .about-banner-area {      
+       min-height: 346px;
+       max-height: 400px;
+       height: 346px;
+       padding-top:0;
+   }
+   .main-wrapper .about-page .about-banner-area h1 {font-size:28px;}
+   .main-wrapper .about-page .white-boxs {width:150px;}
+   .main-wrapper .about-page .white-boxs .box, .main-wrapper .about-page .values-section .cor-content::before, .main-wrapper .about-page .values-section .img-box::before, .main-wrapper .about-page .sectores::before {width:50px;height:50px;}
+   /* section vmv */
+   .main-wrapper .about-page-nav .link {margin-bottom: 20px;}
+   .main-wrapper .about-page .vi-mi-section .text-content .text-box .vi-title, .main-wrapper .about-page .profile-section .pr-title, .main-wrapper .about-page .sectores .se-title{font-size:22px;}
+   .main-wrapper .about-page .vi-mi-section .text-content .text-box p {font-size:14px;}
+   .main-wrapper .about-page .vi-mi-section .text-content {padding-top: 30px;}
+   .main-wrapper .about-page-nav .link {line-height: 28px;}
+   .main-wrapper .about-page .sectores .content-section .tab-container  span {
+       font-size: 50px;
+   }
+   .main-wrapper .about-page .lineage .stategey-box .lineage-carousel .item .main-title {font-size: 28px;}
+}
+@media screen and (max-width:479px){
+   .main-wrapper .about-page-nav .link {margin-bottom: 10px;margin-right: 0;line-height: 18px;padding-right: 8px;}
+   .main-wrapper .about-page .awards-section .owl-section .awards-carousel .item p, .main-wrapper .about-page .awards-section .owl-section .awards-carousel .item .i-subtitle {
+       font-size: 18px;
+       margin-bottom: 15px;
+   }
+   .main-wrapper .about-page .awards-section .owl-section .awards-carousel .item {
+       padding: 30px;
+   }  
+   .main-wrapper .about-page .awards-section .owl-section .awards-carousel .item .i-title {
+       font-size: 24px;
+       padding-bottom: 16px;
+   }
+   
+}

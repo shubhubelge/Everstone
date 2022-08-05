@@ -1,0 +1,480 @@
+.rsg-page{
+  // background-color: red;
+  .about-banner-area {
+    background-image: url('./../assets/images/rsg-bg.jpg');
+    position: relative;
+  }
+  .white-boxs .fill {
+    background-color: $purple;
+    position: relative;
+      top: 0;
+      left: 0;
+      &::after{
+        content: " ";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        border-right: 2px solid $purple;
+        border-top: 2px solid $purple;
+      }
+  }
+  .scroll-bottm {
+    bottom: 0;
+    top: auto;
+  }
+  .misson-section{
+    padding: 120px 0 80px 0;
+    background-color: $yellow;
+    // .container{
+    //   position: relative;
+    //   left: 0;
+    //   top: 0;
+    //   &::before {
+    //     content: "";
+    //     position: absolute;
+    //     bottom: 0;
+    //     right: 0;
+    //     height: 140px;
+    //     width: 140px;
+    //     background-color: $yellow;
+    //   }
+    // }
+    // .di-flex{
+    //   padding-bottom: 180px;
+    // }
+    .img-section{
+      width: 280px;
+      background: $yellow;
+      align-self: flex-start;
+      position: relative;
+      left: 0;
+      top: 0;
+      &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 60px;
+        width: 60px;
+        border-top: 30px solid $white;
+        border-right: 30px solid $white;
+      }
+    }
+    .text-section{
+      width: calc(100% - 280px);
+      padding-left: 110px;
+      p{
+        font-size: 30px;
+        color: $purple;
+        font-family: "Basel-Grotesk-Book";
+        margin-bottom: 24px;
+        line-height: 40px;
+      }
+      .text-second{
+        font-size: 18px;
+        color: $purple;
+        font-family: "Basel-Grotesk-Book";
+        margin-bottom: 24px;
+        line-height: 24px;
+      }
+    }
+  }
+  .our-commit{
+    
+    position: relative;
+    left: 0;
+    top: 0;
+    &::after {
+      content: "";
+      height: 140px;
+      width: 140px;
+      background-color: $white;
+      position: absolute;
+      right: 0px;
+      bottom: 0;
+    }
+    .white-left{
+      // borde\/
+      border-top: 140px solid $yellow;
+      width: 140px;
+    }
+    .text-container{
+      padding-right: 140px;
+      width: calc(100% - 140px);
+      padding: 120px 140px 140px 100px;
+      background-color: $purple;
+    }
+    // .box-stru-grid{
+    //   grid-template-columns: repeat(2, 1fr);
+    //   width: $width-of-box * 2;
+    //   height: $width-of-box * 2;
+    //   position: absolute;
+    //   bottom: 0;
+    //   right: 0;
+    //   .fill{
+    //     background-color: $white;
+    //   }
+    // }
+    h2{
+      font-size: 36px;
+      line-height: 46px;
+      color: $white;
+      font-family: "Basel-Grotesk-Book";
+      margin-bottom: 24px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 24px;
+      color: $white;
+      font-family: "Basel-Grotesk-Book";
+      margin-bottom: 32px;
+
+    }
+    
+  }
+  .list-box{
+    list-style: none;
+    padding-right: 8px;
+    li {
+      padding-left: 16px;
+      position: relative;
+      margin-bottom: 36px;
+      font-size: 18px;
+      line-height: 24px;
+      color: $white;
+      font-family: "Basel-Grotesk-Book";
+      &::before {
+        content: " ";
+        height: 8px;
+        width: 8px;
+        top:8px;
+        margin-top: 0;
+        background-color: $white;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+  .our-approch{
+    padding: 80px 0 40px 0;
+    border-left: 140px solid $purple;
+    position: relative;
+    top: 0;
+    left: 0;
+    &::after {
+      content: "";
+      height: 140px;
+      width: 140px;
+      background-color: $yellow;
+      position: absolute;
+      left: -140px;
+      bottom: 0;
+    }
+    .list-box li{
+      color: $purple;
+      &::before {
+        background-color: $purple;
+      }
+    }
+    .content{
+      padding: 0 98px;
+      margin-bottom: 60px;
+    }
+    h2{
+      font-size: 36px;
+      line-height: 46px;
+      color: #4a1a50;
+      font-weight: bold;
+      font-family: "Basel-Grotesk-Book";
+      margin-bottom: 24px;
+    }
+    .rsg-carousel{
+      padding: 0 98px;
+      .item{
+        margin-bottom: 48px;
+        .image-bg{
+          border-radius: 2px;
+          background-color: #fbfbfb;
+          height: 160px;
+          margin-bottom: 24px;
+          position: relative;
+          top: 0;
+          left: 0;
+          // &::after{
+          //   content: " ";
+          //   width: 16px;
+          //   height: 16px;
+          //   border-top: 8px solid $purple;
+          //   border-right: 8px solid $purple;
+          //   position: absolute;
+          //   right: 12px;
+          //   top: 12px;
+          // }
+        }
+        p{
+          font-size: 16px;
+          line-height: 24px;
+          color: #4a1a50;
+          font-weight: bold;
+          font-family: "Basel-Grotesk-Bold";
+        }
+      }
+    }
+    .owl-title{
+      font-size: 18px;
+      line-height: 28px;
+      color: #4a1a50;
+      font-family: "Helvetica";
+    }
+    .brand-link-carousel{
+      margin-bottom: 48px;
+      padding: 0 98px;
+      .item{
+        margin-bottom: 24px;
+        padding: 2px;
+
+        .image-bg{
+          border-radius: 2px;
+          // filter: drop-shadow(0 0 4.5px rgba(0,0,0,0.07));
+          background-color: #fbfbfb;
+          // box-shadow: 0 0 4.5px rgba(0,0,0,0.07);
+          height: 160px;
+          // margin-bottom: 24px;
+          position: relative;
+          top: 0;
+          left: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 8px;
+
+          img{
+            width: auto;
+            filter: grayscale(100%);
+          }
+          &:hover{
+            img{
+              filter: none;
+            }
+          }
+          &::after{
+            content: " ";
+            width: 16px;
+            height: 16px;
+            border-top: 8px solid $purple;
+            border-right: 8px solid $purple;
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            display: none;
+          }
+        }
+        .ex-link{
+          font-size: 16px;
+          line-height: 24px;
+          text-decoration: underline;
+          color: #4a1a50;
+          font-family: "Basel-Grotesk-Book";
+          display: block;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+      &.owl-theme .owl-dots{
+        .owl-dot{
+          span{
+            border-radius: 0;
+            background-color: $purple;
+          }
+          &:hover{
+            span{
+              background-color: #AAFF31;
+            }
+          }
+  
+        } 
+        .owl-dot.active span{
+          background-color: #AAFF31;
+  
+        }
+      }
+    }
+    
+  }
+  .framework{
+    position: relative;
+    left: 0;
+    top: 0;
+    .white-left{
+      width: 140px;
+    }
+    .content{
+      // padding-left: 100px;
+      background-color: $yellow;
+      width: calc(100% - 140px);
+      padding: 180px 180px 180px 100px;
+
+    }
+    h2{
+      font-size: 24px;
+      line-height: 46px;
+      color: #4a1a50;
+      // font-weight: bold;
+      font-family: "Basel-Grotesk-Bold";
+      margin-bottom: 8px;
+    }
+    &::after {
+      content: "";
+      height: 280px;
+      width: 420px;
+      border-right: 140px solid #4a1a50;
+      border-bottom: 140px solid #4a1a50;
+      position: absolute;
+      right: 0px;
+      bottom: 0;
+    }
+    a{
+      font-size: 18px;
+      line-height: 30px;
+      color: $purple;
+      font-family: "Basel-Grotesk-Book";
+      .download{
+        display: inline-block;
+        margin-left: 8px;
+      }
+    }
+  }
+  
+}
+.report-page{
+// background-color: red;
+  .white-boxs .fill{
+    background-color: $white;
+    &::after {
+      border-color: $white;
+    }
+  }
+  .about-page-nav{
+    h2{
+      font-size: 36px;
+      color: #ffffff;
+      font-family: "Basel-Grotesk-Book";
+      padding: 36px;
+    }
+  }
+  .policy-section{
+    position: relative;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    &::after {
+      content: "";
+      height: 140px;
+      width: 140px;
+      background-color: $purple;
+      position: absolute;
+      right: 0px;
+      bottom: 0;
+    }
+    .container{
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+    &.bg-color{
+      background-color: $purple;
+      h2 , p, .btnDownload{
+        color: $white;
+      }
+      .number{
+        color: $yellow;
+      }
+      &::after {
+        content: "";
+        height: 140px;
+        width: 140px;
+        background-color: $white;
+        position: absolute;
+        right: 140px;
+        bottom: 0;
+      }
+
+    }
+    &.last-ch{
+      .info-box{
+        padding: 220px 0;
+      }
+      &::after {
+        content: "";
+        width: 280px;
+        height: 420px;
+        border: none;
+        border-right: 140px solid #4a1a50;
+        border-top: 140px solid #4a1a50;
+        position: absolute;
+        right: 0px;
+        top: 0;
+        background-color: transparent;
+    }
+    }
+    .info-box{
+      padding: 160px 0;
+      
+      // margin-bottom: 40px;
+    }
+    .number{
+      position: absolute;
+      font-size: 200px;
+      line-height: 80px;
+      color: #4a1a50;
+      font-weight: bold;
+      font-family: "Basel-Grotesk-Book";
+      left: 0;
+      bottom: 0;
+    }
+    h2{
+      font-size: 36px;
+      line-height: 46px;
+      color: #4a1a50;
+      // font-weight: bold;
+      font-family: "Basel-Grotesk-Bold";
+      margin-bottom: 40px;
+    }
+    .list-box li{
+      color: $purple;
+      &::before {
+        background-color: $purple;
+      }
+    }
+    p{
+      font-size: 18px;
+      line-height: 28px;
+      color: #4a1a50;
+      font-family: "Basel-Grotesk-Book";
+      margin-bottom: 24px;
+    }
+  }
+  .btnDownload{
+    font-size: 18px;
+    line-height: 30px;
+    color: #4a1a50;
+    font-family: "Basel-Grotesk-Bold";
+    margin-bottom: 24px;
+    display: block;
+    .download {
+      display: inline-block;
+      margin-left: 8px;
+    }
+  
+  }
+  .text-box{
+    font-size: 18px;
+    line-height: 28px;
+    color: #4a1a50;
+    font-family: "Basel-Grotesk-Book";
+  }
+}

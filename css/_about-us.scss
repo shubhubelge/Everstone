@@ -1,0 +1,456 @@
+.about-us-main{
+  .banner-section{
+    background-color: #ffffff;
+    // background-image: url('./../assets/images/bg-about.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    min-height: 900px;
+    height: auto;
+    padding-top: $space-top-menu;
+    // mix-blend-mode: color();
+    position: relative;
+    top: 0;
+    left: 0;
+    .container,
+    .di-flex{
+      min-height: inherit;
+
+    }
+    .lt, .rt{
+      width: 50%;
+      
+    }
+    .lt{
+      align-self: center;
+      font-family: 'Basel-Grotesk-Book';
+      font-style: normal;
+      // font-weight: 450;
+      font-size: 80px;
+      line-height: 90px;
+      color: #4A1A50;
+      h1{
+        font-family: 'Basel-Grotesk-Book';
+        font-style: normal;
+        // font-weight: 450;
+        font-size: 80px;
+        line-height: 90px;
+        color: #4A1A50;
+      }
+    }
+    .rt{
+      align-self: flex-end;
+      justify-self: flex-end;
+      .box-stru{
+        margin: 0;
+        justify-content: flex-end;
+        .box.fill{
+          background-color: #ffffff;
+        }
+
+      }
+    }
+    
+  }
+  .cotent-box{
+    // align-self: center;
+    padding: 140px 70px 240px 120px;
+    position: relative;
+    top: 0;
+    left: 0;
+    .title{
+      font-family: 'Basel-Grotesk-Medium';
+      font-style: normal;
+      // font-weight: 500;
+      font-size: 38px;
+      line-height: 46px;
+      color: #4A1A50;
+      margin-bottom: 18px;
+
+    }
+    p{
+      font-family: 'Basel-Grotesk-Medium';
+      font-style: normal;
+      // font-weight: 500;
+      font-size: 18px;
+      line-height: normal;
+      color: #4A1A50;
+      margin-bottom: 12px;
+    }
+    .bottom-purpul-box{
+      width: 100%;
+      height: 145px;
+      background-color:#4A1A50;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    
+  }
+  .business-text{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 120px 0;
+    .right-bx{
+      position: absolute;
+      width: 143px;
+      height: 143px;
+      right: 0;
+      top: 0;
+      background: #4A1A50;
+    }
+    .title{
+      font-family: 'Basel-Grotesk-Bold';
+      font-style: normal;
+      // font-weight: 700;
+      font-size: 48px;
+      line-height: 58px;
+      color: #4A1A50;
+    }
+    .subtitle{
+      font-family: 'Basel-Grotesk-Medium';
+      font-style: normal;
+      // font-weight: 500;
+      font-size: 48px;
+      line-height: 58px;
+      color: #4A1A50;
+      margin-bottom: 24px;
+    }
+    .link{
+      font-family: 'Basel-Grotesk-Medium';
+      font-style: normal;
+      // font-weight: 500;
+      font-size: 25px;
+      line-height: 22px;
+      color: #4A1A50;
+    }
+  }
+  .privacy-section{
+    position: relative;
+    top: 0;
+    left: 0;
+    .pri-img-box{
+      background-color: #ffffff;
+      background-image: url('./../assets/images/taj.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      min-height: 720px;
+      height: auto;
+      position: relative;
+      top: 0;
+      left: 0;
+      .purple-box-grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        .box{
+          width: auto;
+          height: 140px;
+        }
+      }
+    }
+    
+  }
+  .author-box{
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+
+    .logo-box{
+      img{
+        width: auto;
+      }
+    }
+    .content{
+      margin-left: 24px;
+      
+      .author-name{
+        font-family: 'Basel-Grotesk-Bold';
+        font-style: normal;
+        // font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #4A1A50;
+      }
+      .author-sub{
+        font-family: 'Basel-Grotesk-Book';
+        font-style: normal;
+        // font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        color: #4A1A50;
+      }
+    }
+  }
+  .climate-change{
+    background-color: #4A1A50;
+    background-image: url('./../assets/images/two-boy.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position:  bottom right;
+    padding: 120px 0;
+    .client-left{
+      width: 36%;
+      .title{
+        font-family: 'Basel-Grotesk-Medium';
+        font-style: normal;
+        // font-weight: 500;
+        font-size: 38px;
+        line-height: 46px;
+        color: #FFFFFF;
+        margin-bottom: 12px;
+
+      }
+      p{
+        font-family: 'Basel-Grotesk-Book';
+        font-style: normal;
+        // font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+      }
+      .author-box{
+        .author-name, .author-sub{
+          color: #ffffff;
+        }
+      }
+      .read-more{
+        color: #ffffff;
+      }
+    }
+  }
+  .credit-section{
+    .pri-img-box{
+      background:none;
+      min-height: auto;
+      border-left: 143px solid #4a1a50;
+      .purple-box-grid{
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .cotent-box{
+      padding: 160px 145px 160px 0 ;
+      .bottom-purpul-box{
+        width: 143px;
+        top: 0;
+        right: 0;
+        left: auto;
+      }
+    } 
+  }
+  .digital{
+    background-color: #4A1A50;
+    // background-image: url('./../assets/images/building.jpg');
+    // background-repeat: no-repeat;
+    // background-size: 50% 100%;
+    // background-position: bottom right;
+    // min-height: 720px;
+    .building{
+      img{
+        height: 100%;
+        object-fit: cover;
+
+      }
+    }
+    height: auto;
+    .cotent-box{
+      padding: 120px 68px 265px 160px;
+    }
+    .cotent-box .title, .cotent-box p, .author-box .content .author-name, .author-box .content .author-sub, .read-more {
+      color: #ffffff;
+    }
+  }
+  .venture{
+    position: relative;
+    top: 0;
+    left: 0;
+    &::before{
+      content: "";
+      height: 145px;
+      width: calc(100% - 145px);
+      position: absolute;
+      top: -145px;
+      left: 0;
+      background-color: #ffffff;
+      // position: ;
+    }
+    .cotent-box{
+      padding-top: 0;
+      padding-bottom: 24px;
+    }
+  }
+  .venture{
+    .building{
+      margin-left: 200px;
+      .read-more{
+        margin: 24px 0;
+      }
+    }
+    ul{
+      list-style: none;
+    }
+    .link{
+      font-family: 'Basel-Grotesk-Book';
+      font-style: normal;
+      // font-weight: 450;
+      font-size: 30px;
+      line-height: 53px;
+      color: #4A1A50;
+      &::before {
+        content: " ";
+        height: 8px;
+        width: 8px;
+        background-color: #4a1a50;
+        display: inline-block;
+        margin-right: 8px;
+        // visibility: hidden;
+      }
+      // &:hover{
+      //   &::before {
+      //     visibility: visible;
+      //   }
+      // }
+    }
+  }
+  .busi-info-section{
+    position: relative;
+    left: 0;
+    top: 0;
+    // background-color: #AAFF31;
+    .di-flex{
+      align-items: flex-end;
+      flex-wrap: nowrap;
+    }
+    &::before {
+      content: " ";
+      position: absolute;
+      width: 143px;
+      height: 143px;
+      right: 0;
+      top: -143px;
+      background: #AAFF31;
+    }
+    .quates{
+      background-color: #AAFF31;
+      height: 100%;
+      min-height: 540px;
+      padding: 100px 160px ;
+
+      p{
+        font-family: 'Basel-Grotesk-Medium';
+        font-style: normal;
+        // font-weight: 500;
+        font-size: 38px;
+        line-height: 50px;
+        color: #4A1A50;
+      }
+      .author{
+        font-family: 'Basel-Grotesk-Book';
+        font-style: normal;
+        // font-weight: 450;
+        font-size: 25px;
+        line-height: 22px;
+        color: #4A1A50;
+      }
+    }
+  }
+}
+.box-stru-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+.box-purpul-box{
+  .box{
+    width: 145px;
+    height: 145px;
+    // background-color: #ffffff;
+  }
+  .fill{
+    background-color:#4A1A50;
+
+  }
+  .fill-yellow{
+    background-color:#AAFF31;
+
+  }
+}
+.white-box{
+  position: absolute;
+  width: 143px;
+  height: 143px;
+  right: 0;
+  top: 0;
+  background: #FFFFFF;
+}
+.posi-absolute{
+  // width: ;
+  position: absolute;
+  
+  &.bottom-right{
+    right: 0;
+    bottom: 0;
+  }
+} 
+.sub-navbar{
+  display: flex;
+  align-items: center;
+
+  a{
+    display: block;
+    width: 20%;
+    background-color: #4A1A50;
+    padding: 36px 0;
+    text-align: center;
+    font-family: 'Basel-Grotesk-Book';
+    font-style: normal;
+    // font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    // height: 110px;
+    // align-self: center;
+    // vertical-align: middle;
+
+    &:hover{
+      color: #4A1A50;
+      background-color: #AAFF31;
+      // font-weight: 600;
+      font-family: 'Basel-Grotesk-Medium';
+
+    }
+  }
+}
+.scroll-arrow-buss{
+  width: 100%;
+  height: 100%;
+  background-color: #4a1a50;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  path {
+    fill: #fff;
+  }
+  &:hover{
+    background-color: #aaff31;
+    path {
+      fill: #4a1a50;
+    }
+  }
+}
+
+.di-grid-2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
