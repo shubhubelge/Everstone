@@ -9,6 +9,8 @@
   // var $ = $;
   // var methods = require("./methods.js");
   // console.log("infule")
+  const observer=lozad();
+  observer.observe();
   if ($('#bannerCarousel').length) {
     let bannerCarousel = $("#bannerCarousel").owlCarousel({
       margin:10,
