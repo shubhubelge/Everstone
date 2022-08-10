@@ -49,6 +49,7 @@
 body{
   font-family: 'Basel-Grotesk-Book';
   touch-action: manipulation;
+  scroll-behavior: smooth;
 }
 // my code
 @import "typography";
@@ -764,6 +765,24 @@ body{
   @import "media-page";
   @import "rsg-page";
   @import "foundation-page";
+  @import "search-page";
+  .t-c{
+    padding: 70px 0 140px 0;
+    h1{
+      font-size: 36px;
+      line-height: 1.5;
+      color: #4a1a50;
+      font-family: 'Basel-Grotesk-Book';
+      margin-bottom: 32px
+    }
+    p{
+      font-size: 18px;
+      line-height: 1.5;
+      color: #4a1a50;
+      font-family: 'Basel-Grotesk-Book';
+      margin-bottom: 32px
+    }
+  }
 }
 @import "approach-page";
 

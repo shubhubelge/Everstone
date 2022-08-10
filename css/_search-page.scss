@@ -1,0 +1,97 @@
+.search-page{
+  .search-result{
+    height: 310px;
+    background-color: #4a1a50;
+    display: flex;
+    align-items: center;
+    .title{
+      font-size: 36px;
+      letter-spacing: -1px;
+      line-height: 1.5;
+      color: #ffffff;
+      font-family: 'Basel-Grotesk-Book';
+      font-weight: normal;
+      span{
+        font-family: 'Basel-Grotesk-Medium';
+      }
+    }
+  }
+  .about-us{
+    padding: 60px 0;
+    h2{
+      font-size: 36px;
+      line-height: 1.5;
+      color: #4a1a50;
+      // font-weight: bold;
+      font-family: "Basel-Grotesk-Medium";
+      margin-bottom: 16px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 1.5;
+      color: #4a1a50;
+      font-family: 'Basel-Grotesk-Book';
+      margin-bottom: 24px;
+
+    }
+  }
+  .search-items{
+    margin-bottom: 60px;
+  }
+  .button-center{
+    text-align: center;
+    margin-top: 48px;
+  }
+  .search-item{
+    border-bottom: 2px solid #4a1a50;
+    padding: 60px 0;
+    display: none;
+    &:first-child{
+      border-top: 2px solid #4a1a50;
+    }
+    .img-box{
+      width: 33%;
+      height: 100%;
+      img{
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+      }
+    }
+    .text-box{
+      width: 67%;
+      padding-left: 120px;
+      .category-type{
+        font-size: 14px;
+        line-height: 1.5;
+        color: #4a1a50;
+        // font-weight: bold;
+        font-family: 'Basel-Grotesk-Medium';
+        text-transform: uppercase;
+        margin-bottom: 24px;
+      }
+      .item-title{
+        font-size: 30px;
+        line-height: 40px;
+        color: #4a1a50;
+        font-family: 'Basel-Grotesk-Book';
+        margin-bottom: 16px;
+
+      }
+      .date{
+        font-size: 18px;
+        line-height: 40px;
+        color: #4a1a50;
+        font-weight: bold;
+        font-family: 'Basel-Grotesk-Book';
+      }
+      p{
+        font-size: 18px;
+        line-height: 28px;
+        color: #4a1a50;
+        font-family: 'Basel-Grotesk-Book';
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
