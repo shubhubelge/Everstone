@@ -1,4 +1,81 @@
+/**
+   * Easy selector helper function
+   */
+ const select = (el, all = false) => {
+  // console.log("in el")
+  el = el.trim()
+  if (all) {
+    return [...document.querySelectorAll(el)]
+  } else {
+    console.log(el)
+    if(el == '#!' || el == '#') return
+    return document.querySelector(el)
+  }
+}
+/**
+ * Easy on scroll event listener 
+ */
+ const onscroll = (el, listener) => {
+  el.addEventListener('scroll', listener);
+}
+/**
+ * Navbar links active state on scroll
+ */
+let navbarlinks = select('#top-menu .link', true)
+const navbarlinksActive = () => {
+ let position = window.scrollY + 200;
+//  console.log(position-100)
+ navbarlinks.forEach(navbarlink => {
+  //  console.log(navbarlink)
+   if (!navbarlink.hash) return
+   let section = select(navbarlink.hash)
+  //  console.log(section)
+   if (!section) return
+   if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+     navbarlink.classList.add('active-link')
+   } else {
+     navbarlink.classList.remove('active-link')
+   }
+ })
+}
+const scrollto = (el) => {
+let header = select('.about-page-nav');
+console.log(header)
+if(header == null) return
+let offset = header.offsetHeight
 
+let elementPos = select(el).offsetTop;
+console.log(elementPos)
+console.log(offset)
+window.scrollTo({
+  top: elementPos - offset,
+  behavior: 'smooth'
+})
+}
+window.addEventListener('load', () => {
+if (window.location.hash) {
+  if (select(window.location.hash)) {
+    scrollto(window.location.hash)
+  }
+}
+});
+
+$('#top-menu').on('click', '.link', function(e) {
+if (select(this.hash)) {
+  e.preventDefault()
+  // console.log("click")
+  // let navbar = select('#navbar')
+  // if (navbar.classList.contains('navbar-mobile')) {
+  //   navbar.classList.remove('navbar-mobile')
+  //   let navbarToggle = select('.mobile-nav-toggle')
+  //   navbarToggle.classList.toggle('bi-list')
+  //   navbarToggle.classList.toggle('bi-x')
+  // }
+  scrollto(this.hash)
+}
+})
+window.addEventListener('load', navbarlinksActive)
+onscroll(document, navbarlinksActive)
 
 // define([
 //   'jquery',
@@ -256,9 +333,13 @@
 // console.log($)
 let gotoId = (id) =>{
   // console.log($("#"+id).length)
+  let heightOfNav = 0;
+  if($('.about-page-nav').length){
+    heightOfNav = $('.about-page-nav').height();
+  }
   if($("#"+id).length === 1)
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#"+id).offset().top,
+        scrollTop: $("#"+id).offset().top - heightOfNav,
     }, 1000);
 };
 
@@ -300,56 +381,68 @@ let gotoId = (id) =>{
 //     // console.log(menuItems)
 // });
 
-$(document).ready(function () {
-  $(document).on("scroll", onScroll);
+// $(document).ready(function () {
+//   $(document).on("scroll", onScroll);
   
-  //smoothscroll
-  $('#top-menu a[href^="#"]').on('click', function (e) {
-      e.preventDefault();
-      $(document).off("scroll");
+//   //smoothscroll
+//   $('#top-menu a[href^="#"]').on('click', function (e) {
+//       e.preventDefault();
+//       $(document).off("scroll");
       
-      $('a').each(function () {
-          $(this).removeClass('active-link');
-      })
-      $(this).addClass('active-link');
+//       $('a').each(function () {
+//           $(this).removeClass('active-link');
+//       })
+//       $(this).addClass('active-link');
     
-      var target = this.hash,
-          menu = target;
-      $target = $(target);
-      $('html, body').stop().animate({
-          'scrollTop': $target.offset().top+2
-      }, 500, 'swing', function () {
-          window.location.hash = target;
-          $(document).on("scroll", onScroll);
-      });
-  });
-});
-function onScroll(event){
-  var scrollPos = $(document).scrollTop();
-  $('#top-menu a').each(function () {
-      var currLink = $(this);
-      var refElement = $(currLink.attr("href"));
-      if (refElement.position().top-100 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-          $('#top-menu a').removeClass("active-link");
-          currLink.addClass("active-link");
-      }
-      else{
-          currLink.removeClass("active-link");
-      }
-  });
-}
+//       var target = this.hash,
+//           menu = target;
+//           console.log(target)
+//       $target = $(target);
+//       $('html, body').stop().animate({
+//           'scrollTop': $target.offset().top - 200,
+//       }, 500, 'swing', function () {
+//           window.location.hash = target;
+//           $(document).on("scroll", onScroll);
+//       });
+//   });
+// });
+// function onScroll(event){
+//   console.log("in")
+//   var scrollPos = $(document).scrollTop();
+//   $('#top-menu a').each(function () {
+//       var currLink = $(this);
+//       var refElement = $(currLink.attr("href"));
+//       if (refElement.position().top -100 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+//           $('#top-menu a').removeClass("active-link");
+//           currLink.addClass("active-link");
+//       }
+//       else{
+//           currLink.removeClass("active-link");
+//       }
+//   });
+// }
 
-let gotoIdNav = (id) =>{
-  // console.log($("#"+id).length)
-  if($("#"+id).length === 1){
-    $('.sub-navbar .link').removeClass('active-link')
-    $('.sub-navbar .'+id).addClass('active-link')
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#"+id).offset().top - 100,
-    }, 1000);
-  }
+// let gotoIdNav = (id) =>{
+//   // console.log($("#"+id).length)
+//   if($("#"+id).length === 1){
+//     let heightOfNav = $('.about-page-nav').height();
+//     // let heightOfNavouter = $('.about-page-nav').outerHeight();
+//     // let topMenu = $('#top-menu').outerHeight();
+//     // console.log(heightOfNav, heightOfNavouter, topMenu)
+//     $('.sub-navbar .link').removeClass('active-link')
+//     $('.sub-navbar .'+id).addClass('active-link')
+//     console.log("in scroll");
+//     console.log($("#"+id).offset().top)
+//     console.log($("#"+id).offset().top - heightOfNav)
+//     // $([document.documentElement, document.body]).animate({
+//     //     scrollTop: $("#"+id).offset().top,
+//     // }, 1000);
+//     $('html, body').animate({
+//       scrollTop: $("#"+id).offset().top - 1000,
+//     }, 2000);
+//   }
     
-};
+// };
 function tabChange(tab){
   // console.log("this");
   $('.tab-nav .link').removeClass('active');
@@ -408,4 +501,11 @@ $(document).ready(function(){
 });
 $(".nav-acc-link").click(() =>{
   $('.sub-list').toggleClass('sub-list-active')
+})
+
+
+$('.toggle-search').click(function (e) {
+  // console.log("")
+  e.preventDefault();
+  $('.search-container').toggleClass('active')
 })

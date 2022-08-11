@@ -56,7 +56,7 @@
                       <a href="./resources-reports.html">Sustainability Resources & Reports</a>
                     </li>
                     <li>
-                      <a href="#!">Everstone Foundation</a>
+                      <a href="./foundation.html">Everstone Foundation</a>
                     </li>
                   </ul>
                 </li>
@@ -84,14 +84,39 @@
             </div>
           </div>
             <div class="login-search">
-              <form action="#!" role="search" class="search-icon search-form">
-                <input type="submit" value="" class="search-submit">
-                <input type="search" name="q" class="search-text" placeholder="Search..." autocomplete="off">
-              </form>
+              <a href="#!" class="search-icon toggle-search" > 
+               <img src="./assets/images/search.svg" alt="">
+              </a>
               <a href="#!" class="login-btn">
                 Investor login
               </a>
             </div>
+        </div>
+        <div class="search-container">
+          <div class="backdrop-box toggle-search"></div>
+          <div class="white-bg">
+            <div class="container">
+              <form action="./search.html" role="search" class="di-flex search-form ">
+                <input type="search" name="q" class="search-text" placeholder="Looking for..." autocomplete="off">
+                <button class="search-btn">
+                  <img src="./assets/images/search.svg" alt="">
+                </button>
+                <button class="clear-btn toggle-search">
+                  <img src="./assets/images/close-black.png" alt="">
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="container">
+            <div class="search-result">
+              <ul>
+                <li><a href="search.html?q=Approach">Approach</a></li>
+                <li><a href="search.html?q=Approach">About Everstone</a></li>
+                <li><a href="search.html?q=Approach">Asia's premier investment groups</a></li>
+                <li><a href="search.html?q=Approach">Anouncement</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -122,7 +147,6 @@
 
       </section>
       <div class="about-page-nav">
-
         <div class="container">
           <a href="#!" class="scroll-bottm" onclick="event.preventDefault(); gotoId('vmv')">
             <svg width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,16 +157,16 @@
             </svg>
           </a>
           <nav class="sub-navbar " id="top-menu">
-            <a href="#vmv" class="link vmv " onclick="event.preventDefault(); gotoIdNav('vmv')">VMV</a>
-            <a href="#profile" class="link profile" onclick="event.preventDefault(); gotoIdNav('profile')">Profile</a>
-            <a href="#lineageSec" class="link lineageSec" onclick="event.preventDefault(); gotoIdNav('lineageSec')">Lineage</a>
+            <a href="#vmv" class="link vmv ">VMV</a>
+            <a href="#profile" class="link profile">Profile</a>
+            <a href="#lineageSec" class="link lineageSec">Lineage</a>
             <!-- <a href="#!" class="link " onclick="event.preventDefault(); gotoIdNav('lineage')">Lineage</a> -->
-            <a href="#sectors" class="link sectors" onclick="event.preventDefault(); gotoIdNav('sectors')">Sectors</a>
-            <a href="#awards" class="link awards" onclick="event.preventDefault(); gotoIdNav('awards')">Awards</a>
-            <a href="#partnerships" class="link partnerships" onclick="event.preventDefault(); gotoIdNav('partnerships')">Partnerships</a>
+            <a href="#sectors" class="link sectors">Sectors</a>
+            <a href="#awards" class="link awards">Awards</a>
+            <a href="#partnerships" class="link partnerships">Partnerships</a>
 
-            <a href="#reach" class="link reach" onclick="event.preventDefault(); gotoIdNav('reach')">Reach</a>
-            <a href="#everstonegroup" class="link everstonegroup" onclick="event.preventDefault(); gotoIdNav('everstonegroup')">Everstone Group</a>
+            <a href="#reach" class="link reach">Reach</a>
+            <a href="#everstonegroup" class="link everstonegroup">Everstone Group</a>
           </nav>
         </div>
       </div>
@@ -726,7 +750,7 @@ Successfully completed a landmark IPO for BK India on December 14, 2020, and the
             <ul class="panel">
               <li><a href="#!">Our Commitment</a></li>
               <li><a href="#!">Sustainability Resources & Reports</a></li>
-              <li><a href="#!">Everstone Foundation</a></li>
+              <li><a href="./foundation.html">Everstone Foundation</a></li>
             </ul>
           </div>
           </div>
@@ -781,6 +805,7 @@ Successfully completed a landmark IPO for BK India on December 14, 2020, and the
   <script src="./assets/vendors/js/owl.carousel.min.js"></script>
 
  <script src="./js/main.js"></script>
+ <!-- <script src="./js/scroll.js"></script> -->
 
 </body>
 

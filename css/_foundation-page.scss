@@ -1,0 +1,264 @@
+.foundation-page{
+  .scroll-bottm{
+    left: 140px;
+  }
+  .about-banner-area {
+    background-image: url('./../assets/images/foundaton.jpg');
+    position: relative;
+    padding: 0 140px;
+  }
+  .white-boxs .fill {
+    background-color: $white;
+    position: relative;
+      top: 0;
+      left: 0;
+      &::after{
+        content: " ";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        border-right: 2px solid $white;
+        border-top: 2px solid $white;
+      }
+  }
+  .emp-yong{
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-top: 100px;
+    h2{
+      font-size: 30px;
+      line-height: 40px;
+      color: #4a1a50;
+      font-family: "Basel-Grotesk-Book";
+      margin-bottom: 32px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 30px;
+      color: #4a1a50;
+      font-weight: bold;
+      font-family: "Basel-Grotesk-Book";
+      margin-bottom: 32px;
+
+    }
+    &::after{
+      content: "";
+      width: 280px;
+      height: 280px;
+      border: none;
+      border-left: 140px solid #4a1a50;
+      border-bottom: 140px solid #4a1a50;
+      position: absolute;
+      right: 0px;
+      top: 0;
+      background-color: rgba(0,0,0,0);
+    }
+    .pro-container{
+      margin-bottom: 16px;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 90%;
+      max-width: 660px;
+      .number{
+        font-size: 30px;
+        line-height: 30px;
+        color: #4a1a50;
+        font-family: "Basel-Grotesk-Book";
+        position: absolute;
+        top: 20px;
+        right: 0;
+      }
+      label{
+        font-size: 18px;
+        line-height: 30px;
+        color: $purple;
+        font-family: "Basel-Grotesk-Book";
+        margin-bottom: 8px;
+        display: inline-block;
+      }
+      progress {
+        border-radius: 7px; 
+        width: 86%;
+        height: 8px;
+        display: block;
+        // margin-left: -11.5%;
+        // box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+      }
+      progress::-webkit-progress-bar {
+        background-color: #aaff31;
+        border-radius: 0px;
+      }
+      progress::-webkit-progress-value {
+        background-color: #4a1a50;
+        border-radius: 0px;
+        // box-shadow: 1px 1px 5px 3px rgba( 255, 0, 0, 0.8 );
+      }
+      // progress::-moz-progress-bar {
+      // }
+    }
+
+    
+  }
+  .education{
+    position: relative;
+    left: 0;
+    top: 0;
+    background-image: url('./../assets/images/edu-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    &::before{
+      border-top: 140px solid $white;
+      // border-right: 140px solid transparent;
+      width: calc(100% - 140px);
+      content: "";
+      display: block;
+    }
+    .info-box{
+      padding: 120px 0;
+    }
+    h2{
+      font-size: 36px;
+      line-height: 46px;
+      color: #ffffff;
+      font-family: "Basel-Grotesk-Book";
+      margin-bottom: 32px;
+    }
+    p{
+      margin-bottom: 32px;
+    }
+    .text-box{
+      font-size: 30px;
+      line-height: 40px;
+      color: #ffffff;
+      font-family: "Basel-Grotesk-Book";
+      margin: 0;
+    }
+    .content{
+      font-size: 18px;
+      line-height: 28px;
+      color: #ffffff;
+      font-family: "Basel-Grotesk-Book";
+    }    // padding: 0 140px;
+
+  }
+  .skill-dev{
+    background-image: url('./../assets/images/green.jpg');
+    &::before{
+      display: none;
+    }
+    .skill-box{
+      margin-left: 140px;
+      
+      .info-box{
+        padding: 120px 100px;
+        width: 45%;
+        background-color: $white;
+
+        h2{
+          font-size: 36px;
+          line-height: 46px;
+          color: $purple;
+          // font-weight: bold;
+          font-family: "Basel-Grotesk-Book";
+          margin-bottom: 24px;
+
+        }
+        p{
+          font-size: 18px;
+          line-height: 28px;
+          color: $purple;
+          font-family: "Basel-Grotesk-Book";
+          margin-bottom: 24px;
+        }
+      }
+      .img-box{
+        width: 55%;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &.second{
+        .info-box{
+          width: 55%;
+          background-color: $purple;
+          h2 , p{
+            color: $white;
+          }
+        }
+        .img-box{
+          width: 45%;
+        }
+      }
+    }
+  }
+  .social{
+    .control-white-box{
+      width: $width-of-box;
+      background-color: $white;
+      // border-top: 140px solid #4a1a50;
+      // height: 100%;
+    }
+    .content{
+      padding: 120px 100px;
+      background-color: $yellow;
+      width: calc(100% - $width-of-box);
+      position: relative;
+      left: 0;
+      top: 0;
+      &::after{
+        content: "";
+        height: 280px;
+        width: $width-of-box * 3;
+        border-right: 140px solid #4a1a50;
+        border-bottom: 140px solid #4a1a50;
+        position: absolute;
+        right: 0px;
+        bottom: 0;
+      }
+      h2{
+        font-size: 36px;
+        color: $purple;
+        line-height: 46px;
+        // font-weight: bold;
+        font-family: "Basel-Grotesk-Book";
+        margin-bottom: 24px;
+      }
+      p{
+        font-size: 18px;
+        line-height: 28px;
+        color: $purple;
+        font-family: "Basel-Grotesk-Book";
+        margin-bottom: 32px;
+      }
+      .text{
+        font-size: 18px;
+        color: $purple;
+        font-family: "Basel-Grotesk-Medium";
+      }
+    }
+    &.health{
+      .control-white-box{
+        background-color: $purple;
+      }
+      .content{
+        background-image: url('./../assets/images/health.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        &::after{
+          content: "";
+          height: $width-of-box;
+          width: $width-of-box;
+          background-color: $purple;
+        }
+      }
+    }
+  }
+}

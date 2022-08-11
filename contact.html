@@ -59,7 +59,7 @@
                       <a href="./resources-reports.html">Sustainability Resources & Reports</a>
                     </li>
                     <li>
-                      <a href="#!">Everstone Foundation</a>
+                      <a href="./foundation.html">Everstone Foundation</a>
                     </li>
                   </ul>
                 </li>
@@ -87,14 +87,39 @@
             </div>
           </div>
             <div class="login-search">
-              <form action="#!" role="search" class="search-icon search-form">
-                <input type="submit" value="" class="search-submit">
-                <input type="search" name="q" class="search-text" placeholder="Search..." autocomplete="off">
-              </form>
+              <a href="#!" class="search-icon toggle-search" > 
+               <img src="./assets/images/search.svg" alt="">
+              </a>
               <a href="#!" class="login-btn">
                 Investor login
               </a>
             </div>
+        </div>
+        <div class="search-container">
+          <div class="backdrop-box toggle-search"></div>
+          <div class="white-bg">
+            <div class="container">
+              <form action="./search.html" role="search" class="di-flex search-form ">
+                <input type="search" name="q" class="search-text" placeholder="Looking for..." autocomplete="off">
+                <button class="search-btn">
+                  <img src="./assets/images/search.svg" alt="">
+                </button>
+                <button class="clear-btn toggle-search">
+                  <img src="./assets/images/close-black.png" alt="">
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="container">
+            <div class="search-result">
+              <ul>
+                <li><a href="search.html?q=Approach">Approach</a></li>
+                <li><a href="search.html?q=Approach">About Everstone</a></li>
+                <li><a href="search.html?q=Approach">Asia's premier investment groups</a></li>
+                <li><a href="search.html?q=Approach">Anouncement</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -169,13 +194,13 @@
       <div class="about-page-nav" >
         <div class="container">
           <nav class="sub-navbar" id="top-menu">
-            <a href="#singapore" class="link" onclick="event.preventDefault(); gotoIdNav('singapore')">Singapore</a>
-            <a href="#mumbai" class="link" onclick="event.preventDefault(); gotoIdNav('mumbai')">Mumbai</a>
-            <a href="#bengaluru" class="link" onclick="event.preventDefault(); gotoIdNav('bengaluru')">Bengaluru</a>
-            <a href="#delhi" class="link" onclick="event.preventDefault(); gotoIdNav('delhi')">Delhi</a>
-            <a href="#mauritius" class="link" onclick="event.preventDefault(); gotoIdNav('mauritius')">Mauritius</a>
-            <a href="#newYork" class="link" onclick="event.preventDefault(); gotoIdNav('newYork')">New York</a>
-            <a href="#dubai" class="link" onclick="event.preventDefault(); gotoIdNav('dubai')">Dubai</a>
+            <a href="#singapore" class="link">Singapore</a>
+            <a href="#mumbai" class="link">Mumbai</a>
+            <a href="#bengaluru" class="link">Bengaluru</a>
+            <a href="#delhi" class="link">Delhi</a>
+            <a href="#mauritius" class="link">Mauritius</a>
+            <a href="#newYork" class="link">New York</a>
+            <a href="#dubai" class="link">Dubai</a>
           </nav>
         </div>
       </div>
@@ -340,7 +365,7 @@
             <ul class="panel">
               <li><a href="#!">Our Commitment</a></li>
               <li><a href="#!">Sustainability Resources & Reports</a></li>
-              <li><a href="#!">Everstone Foundation</a></li>
+              <li><a href="./foundation.html">Everstone Foundation</a></li>
             </ul>
           </div>
           </div>

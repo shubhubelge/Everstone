@@ -1069,6 +1069,131 @@
   .main-wrapper .rsg-page .our-approch .rsg-carousel .item .image-bg, .main-wrapper .rsg-page .our-approch .brand-link-carousel .item .image-bg{
     height: 108px;
   }
+  .main-wrapper .foundation-page .about-banner-area{
+    padding: 0 50px 0 20px;
+    background-image: url('./../assets/images/foundaton.jpg');
+  }
+  .main-wrapper .foundation-page .scroll-bottm{
+    left: 20px;
+  }
+  .main-wrapper .foundation-page .emp-yong::after{
+    width: 100px;
+    height: 100px;
+    border-width: 50px;
+  }
+  .main-wrapper .foundation-page .emp-yong h2{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    margin-bottom: 24px;
+    width: calc(100% - 110px);
+    br{
+      display: none;
+    }
+  }
+  .main-wrapper .foundation-page .emp-yong p{
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 24px;
+
+  }
+  .main-wrapper .foundation-page .emp-yong .pro-container label{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .main-wrapper .foundation-page .emp-yong .pro-container progress{
+    height: 5px;
+  }
+  .main-wrapper .foundation-page .emp-yong .pro-container .number{
+    font-size: 16px;
+    line-height: 18px;
+    top: 16px;
+  }
+  .main-wrapper .foundation-page .education::before{
+    border-top: 50px solid #fff;
+    width: calc(100% - 50px);
+  }
+  .main-wrapper .foundation-page .emp-yong{
+    padding-bottom: 40px;
+    padding-top: 70px;
+  }
+  .main-wrapper .foundation-page .education .info-box{
+    padding: 50px 0;
+  }
+  .main-wrapper .foundation-page .education h2{
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 16px;
+  }
+  .main-wrapper .foundation-page .education .text-box{
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .main-wrapper .foundation-page .education p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  // .main-wrapper .foundation-page .skill-dev{
+  //   // padding-left: 0;
+  // }
+  .main-wrapper .foundation-page .skill-dev .skill-box{
+    margin-left: 50px;
+  }
+  .main-wrapper .foundation-page .skill-dev .skill-box .info-box, .main-wrapper .foundation-page .skill-dev .skill-box .img-box{
+    width: 100%;
+  }
+  .main-wrapper .foundation-page .skill-dev .skill-box .info-box{
+    padding: 48px 48px 16px 24px;
+  }
+
+  .main-wrapper .foundation-page .skill-dev .skill-box.second{
+    margin-top: 148px;
+    padding: 0;
+    margin-left: 0;
+    // width: calc(100% + 50px);
+  }
+  .main-wrapper .foundation-page .skill-dev .skill-box.second .info-box{
+    width: 100%;
+  }
+  .main-wrapper .foundation-page .skill-dev .skill-box .info-box h2{
+    font-size: 24px;
+    line-height: normal;
+  }
+  .main-wrapper .foundation-page .skill-dev .skill-box .info-box p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .main-wrapper .foundation-page .social .control-white-box{
+    width: 50px;
+  }
+  .main-wrapper .foundation-page .social .content{
+    width: calc(100% - 50px);
+    padding: 60px 60px 100px 24px;
+  }
+  .main-wrapper .foundation-page .social .content::after{
+    height: 100px;
+    width: 150px;
+    border-width: 50px;
+  }
+  .main-wrapper .foundation-page .social .content h2{
+    font-size: 24px;
+    line-height: normal;
+  }
+  .main-wrapper .foundation-page .social .content p{
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+  .main-wrapper .foundation-page .social.health .content::after{
+    width: 50px;
+    height: 50px;
+
+  }
+  .main-wrapper .foundation-page .social.health .content {
+    background-image: url('./../assets/images/health-small.jpg');
+    padding: 240px 40px 40px 24px;
+  }
   // .main-wrapper .report-page .policy-section.last-ch .info-box{
   //   padding-right: 60px;
   // }
